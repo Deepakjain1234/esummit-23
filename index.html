@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Summit</title>
+  <!-- <link rel="stylesheet" href="mobile.css" /> -->
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a66516daf4.js" crossorigin="anonymous"></script>
+  <!-- ✅ Load slick theme CSS ✅ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <script src="https://kit.fontawesome.com/a66516daf4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/stylesAk.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!--ayushi script-->
+  <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./animate.css" />
+  <link rel="stylesheet" href="CSS/stylesAk.css">
+
+</head>
+<style>
+  .itbdiv {
+    width: 24.5em;
+    height: 25em;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    font-size: inherit;
+  }
+
+  .itbdiv>img {
+    height: 7.0625em;
+  }
+
+  .parent {
+    display: flex;
+    color: rgba(232, 232, 232, 1);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .itbhead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6303em;
+    line-height: 2em;
+    letter-spacing: 0.03em;
+    margin-top: 33px;
+    margin-bottom: 18px;
+    color: #E8E8E8;
+  }
+
+  .itbdesc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625em;
+    line-height: 1.625em;
+    width: 19.9375em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    color: #E8E8E8;
+  }
+
+  .circleGauge {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 8px;
+    stroke-dasharray: 29.5rem;
+    stroke-dashoffset: 29.5rem;
+    animation: anim 2s linear forwards;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+
+  .circleFull {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 2px;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+
+
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 14.75rem;
+    }
+  }
+
+  .timerDigits {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3.2934rem;
+    line-height: 4rem;
+
+    letter-spacing: 0.03em;
+
+    fill: #FFFFFF;
+
+  }
+
+  .timerCaptions {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 1.6875rem;
+
+    letter-spacing: 0.03em;
+
+    fill: #E8E8E8;
+  }
+
+  @media (max-width: 1300px) {
+
+    html {
+      font-size: 14px;
+    }
+
+    .parent {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    html {
+      font-size: 13px;
+    }
+
+    .parent {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+
+    html {
+      font-size: 12px;
+
+    }
+
+    .parent {
+      font-size: 12px;
+    }
+  }
+
+
+
+  @media (max-width: 900px) {
+
+    /* footer causing overflow making menu burger icon outside viewport; */
+    html {
+      font-size: 9px;
+    }
+
+    .parent {
+      font-size: 9px;
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    html {
+      font-size: 7px !important;
+
+    }
+
+    .parent {
+      font-size: 11.9px;
+    }
+
+    .itbhead {
+      margin-top: unset;
+      margin-bottom: unset;
+    }
+
+    .burger div {
+      width: 4.5625rem;
+      height: 0.475rem;
+      /* background-color: #EA8A01; */
+      background-color: white;
+      margin: 0.8125rem;
+      border-radius: 3px;
+      transition-duration: 500ms;
+    }
+
+    .burger {
+      display: block;
+      position: fixed;
+      right: 2rem;
+      top: 4.3rem;
+      margin-right: 0.625rem;
+      z-index: 1001;
+    }
+
+    nav {
+      background: rgba(4, 7, 13, 0.85) !important;
+      padding: 10px 0px;
+    }
+
+    #first-section {
+      height: calc(100vh - 23.375rem - 9rem) !important;
+      text-align: center;
+
+      background: url(./mearth.jpg) !important;
+      /* height: 100vh !important; */
+      display: flex !important;
+      align-content: center !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background-size: cover !important;
+      background-position-y: -5rem !important;
+      background-repeat: no-repeat !important;
+      background-color: #050608 !important;
+
+    }
+
+    #eRgf {
+      max-width: unset !important;
+    }
+
+    .wall-heading {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32.2638px !important;
+      line-height: 38px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+
+    }
+
+    .sub-heading {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32.2638px !important;
+      line-height: 39px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+    }
+
+    .tagline {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8.01937px !important;
+      line-height: 10px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+      padding: 0px 41px;
+    }
+
+    .social-bigs {
+      display: none;
+      position: unset;
+      /* z-index: 1000; */
+      /* display: flex !important; */
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center !important;
+      /* right: 50px; */
+      /* bottom: 50px; */
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      font-size: 2em !important;
+      /* top: 9em !important; */
+      align-content: center;
+      padding-top: 0.8125rem;
+    }
+
+    .social-bigs::before {
+      display: none;
+    }
+
+    .itbdesc {
+      text-align: justify;
+    }
+
+    .nav-link {
+      font-size: 2.5rem;
+    }
+
+    #logo {
+      /* height: 5.875rem; */
+      width: 15.875rem;
+      margin: unset;
+      margin-top: 2rem;
+      transition: 0.4s;
+    }
+
+    #HeRe {
+      position: relative;
+      top: -28px;
+    }
+  }
+</style>
+
+<body style="overflow-x: hidden;">
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    
+    
+    
+    </script>
+  <nav style="opacity: 1;">
+    <a href="https://www.ecellnitb.com" style="
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    "><img id="logo" src="./logo.png"></a>
+
+    <ul class="nav nav-items" style="text-transform: uppercase;">
+      <li class="nav-link"><a onclick="closeNav()" href="#first-section">Home</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#">about us</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#event-section">events</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#speakers">speakers</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#schedule">schedule</a></li>
+      <!-- <li class="nav-link"><a onclick="closeNav()" href="#">why attend?</a></li> -->
+      <!-- <li class="nav-link"><a href="./faq/">faqs</a></li> -->
+
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <section
+    style="background: url(./earth.png);height:100vh;display: flex;align-content: center;align-items: center;justify-content: center;background-size: contain;background-position-x: right;background-repeat: no-repeat;background-color: #050608;"
+    id="first-section">
+    <div id="HeRe" style="
+/* background: blue; */
+width: 76.75rem;
+">
+      <div id="eRgf" style="
+max-width: 51rem;
+">
+        <div class="wall-heading" style="
+        font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 5.375rem;
+line-height: 6.3125rem;
+letter-spacing: 0.03em;
+color: #E8E8E8;
+        ">
+          Entrepreneurship
+        </div>
+        <div class="sub-heading" style="
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 5.375rem;
+line-height: 6.5625rem;
+letter-spacing: 0.03em;
+
+color: #E8E8E8;
+    ">
+          Summit 2023
+        </div>
+        <div class="tagline" style="
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 1.5rem;
+letter-spacing: 0.03em;
+margin-top:2.1875rem;
+color: #E8E8E8;
+    ">
+          Central India’s Largest Entrepreneurial Fest, connecting great minds and avenging the conventional.
+          Whatever it takes!
+
+        </div>
+        <div class="social social-bigs social-bigs-mbl">
+          <a href="https://twitter.com/ecell_nitb" class="animate__animated animate__fadeInUp animate__delay-1s"
+            target="_blank"><i class="fab fa-twitter" style="/* color: white;     */ "></i></a>
+          <a href="https://www.facebook.com/ecellnitbhopal/"
+            class="animate__animated animate__fadeInUp animate__delay-2s" target="_blank"><i
+              class="fa-brands fa-square-facebook" style="/* color: white; */ "></i></a>
+          <a href="https://www.instagram.com/ecell_nitb/" class="animate__animated animate__fadeInUp animate__delay-3s"
+            target="_blank"><i class="fab fa-instagram" style="/* color: white;     */ "></i></a>
+          <a href="https://www.linkedin.com/company/ecell-manit"
+            class="animate__animated animate__fadeInUp animate__delay-4s" target="_blank"><i
+              class="fa-brands fa-linkedin" style="/* color: white;     */ "></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="
+    display: flex;
+    width: 100vw;
+    height: 23.375rem;
+    background: linear-gradient(180deg, #030608 0%, rgba(1, 20, 39, 0.98) 100%);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ">
+    <div style="
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6928rem;
+    line-height: 2.0625rem;
+    letter-spacing: 0.03em;
+    color: #E8E8E8;
+    display: block;
+    margin-bottom: 2.5625rem;
+    ">COUNTDOWN TIMER</div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="
+        display: block;
+        /* overflow: visible; */
+        height: 12.6875rem;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        width: 47.3125rem;
+        ">
+      <defs>
+        <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#34B1F2"></stop>
+          <stop offset="100%" stop-color="#17F892"></stop>
+        </linearGradient>
+      </defs>
+      <circle class="circleGauge" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
+      <circle class="circleFull" stroke-linecap="round" style="cx:5rem;cy:5rem;r:4.375rem;"></circle>
+      <text x="3.4rem" y="6.3rem" class="timerDigits">07</text>
+      <text x="3.4rem" y="12.5rem" class="timerCaptions">Days</text>
+      <circle class=" circleGauge" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
+      <circle class="circleFull" stroke-linecap="round" style="cx:17.5rem;cy:5rem;r:4.375rem;"></circle>
+      <text x="15.5rem" y="6.3rem" class="timerDigits">28</text>
+      <text x="15.6rem" y="12.5rem" class="timerCaptions">Hours</text>
+      <circle class=" circleGauge" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
+      <circle class="circleFull" stroke-linecap="round" style="cx:30rem;cy:5rem;r:4.375rem;"></circle>
+      <text x="28.0rem" y="6.3rem" class="timerDigits">60</text>
+      <text x="27.4rem" y="12.5rem" class="timerCaptions">Minutes</text>
+      <circle class=" circleGauge" stroke-linecap="round" style="cx:42.4rem;cy:5rem;r:4.375rem;"></circle>
+      <circle class="circleFull" stroke-linecap="round" style="cx:42.5rem;cy:5rem;r:4.375rem;"></circle>
+      <text x="40.9rem" y="6.3rem" class="timerDigits">10</text>
+      <text x="39.9rem" y="12.5rem" class="timerCaptions">Seconds</text>
+    </svg>
+  </section>
+  <section id="event-section">
+    <div style=" padding-top: 7.4375rem; background-color: #050506; padding-bottom:11.8125rem; ">
+      <div style=" display: flex;justify-content: center;flex-direction: column;align-items: center;width: 100vw;">
+
+        <div style="
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            letter-spacing: 0.03em;
+            color: #E8E8E8;
+            ">
+          Join Events
+        </div>
+        <div style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 4.0625rem;
+                line-height: 4.9375rem;
+                letter-spacing: 0.03em;
+                color: #464646;
+                text-align:center;
+                margin-bottom: 7.25rem;
+                ">What’s in the box?</div>
+        <div class="parent">
+          <div class="div1 itbdiv wow slideInLeft">
+            <img src="./bplan.png" alt="" srcset="">
+            <div class="itbhead">
+              Business Plan Competition
+            </div>
+            <div class="itbdesc">
+              Business Plan is a contest of the best minds based on the idea of presenting a lean canvas
+              in front of a panel of experts and pitching them the ideas.
+            </div>
+          </div>
+          <div class="div2 itbdiv wow slideInRight">
+            <img src="./stock.png" alt="" srcset="">
+            <div class="itbhead">
+              Stock Trading Simulation
+            </div>
+            <div class="itbdesc">
+              Stock Trading Simulation provides a risk-free environment with a realistic replica of the
+              Dalal Street to try and learn relevant skills needed for trading before they trade in real
+              life.
+            </div>
+          </div>
+          <div class="div3 itbdiv wow slideInLeft">
+
+            <img src="./crypto.png" alt="" srcset="">
+            <div class="itbhead">
+              Crypto Trading Simulation
+            </div>
+            <div class="itbdesc">
+              Crypto Trading Simulation is a cluster of a workshop on gaining a deeper understanding of
+              digital currencies and a contest of trading with the replica of numerous cryptocurrencies.
+            </div>
+          </div>
+          <div class="div4 itbdiv wow slideInRight">
+            <img src="./hacka.png" alt="" srcset="">
+
+            <div class="itbhead">
+              Hackathon
+            </div>
+            <div class="itbdesc">
+              Hackathon is a 48-hour long event for all the coding enthusiasts to win exciting prizes by
+              utilizing their coding skills to develop a prototype solution for real world problems.
+            </div>
+          </div>
+          <div class="div5 itbdiv wow slideInLeft">
+            <img src="./creator.png" alt="" srcset="">
+            <div class="itbhead">
+              Creator’s Camp
+            </div>
+            <div class="itbdesc">
+              Creator’s Camp is a fun event aimed at introducing social media marketing tools and
+              strategies through a series of exercises that focus on creatively promoting companies and
+              goods.
+            </div>
+          </div>
+          <div class="div6 itbdiv wow slideInRight">
+            <img src="./expo.png" alt="" srcset="">
+            <div class="itbhead">
+              Start Up Expo
+            </div>
+            <div class="itbdesc">
+              Startup Expo provides a platform to connect the most disruptive startups from all over the
+              country and investors while pitching their innovative ideas and earning valuable resources
+              like funding, co-working space etc.
+            </div>
+          </div>
+          <div class="div7 itbdiv wow slideInLeft">
+            <img src="./guest lec.png" alt="" srcset="">
+            <div class="itbhead">
+              Guest Lecture
+            </div>
+            <div class="itbdesc">
+              Watch successful people spilling their success secrets! Guest sessions will feature renowned
+              International speakers from different domains.
+            </div>
+          </div>
+          <div class="div8 itbdiv wow slideInRight">
+            <img src="./ipl auc.png" alt="" srcset="">
+            <div class="itbhead">
+              IPL Auction
+            </div>
+            <div class="itbdesc">
+              IPL Auction is a replica of the bidding event, challenging judgemental skills, budget
+              management and strategizing skills to form the best possible team.
+            </div>
+          </div>
+          <div class="div9 itbdiv wow slideInLeft">
+            <img src="./pitshop.png" alt="" srcset="">
+            <div class="itbhead">
+              Comedic Pitshop
+            </div>
+            <div class="itbdesc">
+              Workshops are a comprehensive place with intensive exercises and numerous sessions by
+              industrial experts on concepts that require guidance to master them.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="speakers">
+    <h3 class="spk-heading">Speakers</h3>
+    <h1 class="spk-sub-heading">Meet Your Speaker/Guest</h1>
+      <div class="hp-fp-section">
+      <div class="container-spk">
+        <div class="fp-wrapper">
+
+          <div class="fp-slider-items">
+
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/1.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/ChouhanShivraj" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/ChouhanShivraj/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/chouhanshivraj/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-details">
+                <p class="spk-name">SHIVRAJ SINGH CHOUHAN </p>
+                <p class="spk-title"> Hon’ Chief Minister Madhya Pradesh</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/2.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/GeneralBakshi" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/people/Major-General-GD-Bakshi/100044152748028" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">MAJ GENERAL G.D. BAKSHI</p>
+                <p class="spk-title">SM, VSM</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/3.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/AbhiUpmanyu" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/abhishekupmanyuu/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-upmanyu-86009942/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">ABHISHEK UPMANYU</p>
+                <p class="spk-title">Standup Comedian</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/4.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/ZevSiegel" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/public/Zev-Siegel" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/zev-siegl-17a164a1/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Zev Siegl</p>
+                <p class="spk-title">Starbucks<br>Co-Founder</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/5.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/ryanfoland" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/ryanfoland313/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ryanfoland/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Ryan Foland</p>
+                <p class="spk-title">Founder of Expert Dojo<br> 4-times TEDx Speaker</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/6.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/matteorizzi" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/matteorizziofficial/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/matteorizzi/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Matteo Rizzi</p>
+                <p class="spk-title">Co-Founder of FTS Group <br> Host of #1 Radio Show</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/7.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/RaoulGMI" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/people/Raoul-Pal/100077896848976/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/raoul-pal-real-vision/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Raoul Pal</p>
+                <p class="spk-title">Founder of RealVision <br> Former Head at Goldman Sachs</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/8.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/jasonfalls" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/jasonfalls" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/jasonfalls/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Jason Falls</p>
+                <p class="spk-title">Author, Top Influencer <br>
+                  Entrepreneur, Forbes</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/9.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/GregReid" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Dr.GregReid" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/gregsreid/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Greg S. Reid</p>
+                <p class="spk-title">Forbes Top 5 Keynote Speakers</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/10.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/iAbhilashM" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/abhilashmisra/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Abhilash
+                  Misra </p>
+                <p class="spk-title">CEO, NSE Academy <br> Jury and eminent Advisor<br> Penn GSE</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/11.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/anurag_dobhal" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/anuragdobhalofficial" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Anurag Dobhal</p>
+                <p class="spk-title">The UK07 Rider <br> 2.57M subscribers</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/12.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Naman
+                  Deshmukh</p>
+                <p class="spk-title"> Silver Play Button <br> YouTube Creator</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/13.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shakti-singh-shekhawat-692456a8/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Shakti Singh
+                  Shekhawat</p>
+                <p class="spk-title">91K+ Instagram followers</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/14.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/shagun.malhotra.7" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Shagun
+                  Malhotra </p>
+                <p class="spk-title">235k+ Instagram Followers</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/15.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/ChouhanShivraj" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/ChouhanShivraj/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/chouhanshivraj/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Prerna &
+                  Harsh </p>
+                <p class="spk-title"> YouTuber <br> 7M+ Subscribers</p>
+
+              </div>
+
+            </div>
+            <div class="fp-slider-wrapper">
+
+              <div class="fp-img">
+                <img src="images/16.png" />
+                <div class="events-overlay-spk">
+                  <div class="icon">
+
+                    <a href="https://twitter.com/ChouhanShivraj" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/ChouhanShivraj/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/chouhanshivraj/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-details">
+                <p class="spk-name">Royal
+                  Jordanian</p>
+                <p class="spk-title">Youtube MotoVlogger <br> 1.51M subscribers</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- ✅ load Slick ✅ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script>
+      jQuery(".fp-slider-items").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
+  </section>
+  <div class="schedgal">
+    <section id="schedule">
+      <h3 class="schedule-head">Schdule</h3>
+      <h2 class="schedule-sub-head">Event Schedule</h2>
+      <div class="event-btn">
+        <div onclick="changeTOBlack()" class="btn-jan">
+          <p>January</p>
+          <p class="event-year">2023</p>
+        </div>
+        <div onclick="changeTOBlue()" class="btn-feb">
+          <p>February</p>
+          <p class="event-year">2023</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline2">
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Ryan Foland</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Zev</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Raul Paul</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+        <div class="event-timeline">
+          <div class="event-tl">
+            <div class="event-tl-p1">
+              <p class="event-name-tl">Keynote Session</p>
+              <p class="event-detail-tl">Buisness Plan Workshop How To Make A Lean Canvas And A Pitch Deck
+              </p>
+            </div>
+            <div class="event-tl-p2">
+              <img src="./images/man.png" alt="" class="event-img-tl">
+              <p class="event-img-spk">Akhilendra Rai</p>
+            </div>
+
+          </div>
+          <div class="more-event-detail">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+          </div>
+          <div class="line-tl">
+            <div class="left-hr"></div>
+            <div class="circle-tl"><i class="fa-solid fa-angle-down"></i></div>
+            <div class="right-hr"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h3 class="gal-head">Gallery</h3>
+      <h2 class="gal-sub-head">Event Gallery</h2>
+      <section class="gal-carousel">
+        <div class="gal-container">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1041/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1043/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1044/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1045/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1049/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                  </div>
+
+                </figure>
+              </li>
+            </ul>
+            <ul class="carousel__thumbnails">
+              <li>
+                <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+              </li>
+              <li>
+                <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+              </li>
+              <li>
+                <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+              </li>
+              <li>
+                <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+              </li>
+              <li>
+                <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+              </li>
+              <li>
+                <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+  <div class="peoplesay">
+    <div class="heads">
+      <div class="heading"> What People say</div>
+      <div class="heading1">About Us</div>
+    </div>
+    <div class="write">
+      <div class="writeup">Constructive feedback has always been a vital part of our journey.</div>
+      <div class="writeup">Know what people feel about us!.</div>
+    </div>
+
+    <div class="swiper mySwiper class" style="width:80%; margin-top:-3vh;">
+
+      <div class="swiper-wrapper myclass">
+        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+        </div>
+        <div class="swiper-slide ayu-box">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+        </div>
+
+        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+        </div>
+
+        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+
+        </div>
+        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+          <div class="name"></div>
+        </div>
+        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur quia velit mollitia quis magni!
+          </div>
+
+        </div>
+        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+
+        </div>
+        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+
+        </div>
+        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+          <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
+            quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
+            debitis
+            consectetur
+            quia velit mollitia quis magni!
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <div class="swiper-button-next nxt"></div>
+      <div class="swiper-button-prev prev"></div>
+    </div>
+    <div class="swiper mySwiper class" style="width:80%">
+
+      <div class="swiper-wrapper myclass">
+        <div class="swiper-slide name" style="width: 50px; margin-right:1px;">
+          <div class="sub3"> Eishan Chaudhary
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+        </div>
+
+        <div class="swiper-slide name">
+          <div class="sub3">Rishita Maheshwari
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+        </div>
+
+        <div class="swiper-slide name" style="width:50px; margin-right:1px;">
+          <div class="sub3">Jack Dorsey
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+        </div>
+
+        <div class="swiper-slide name" style="width:50px; margin-right:1px;">
+          <div class="sub3">Namita Deshmukh
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+
+        </div>
+        <div class="swiper-slide nae" style="width: 50px; margin-right:1px;">
+          <div class="sub">
+          </div>
+        </div>
+        <div class="swiper-slide name" style="width:50px; margin-right:1px;">
+          <div class="sub">
+          </div>
+
+        </div>
+        <div class="swiper-slide name" style="width:50px; margin-right:1px;">
+          <div class="sub">Magnis Parker
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+
+        </div>
+        <div class="swiper-slide name" style="width: 50px; margin-right:1px;">
+          <div class="sub">MArgaret
+          </div>
+          <div class="sub1"> Piro Designer
+          </div>
+        </div>
+        <div class="swiper-slide name" style="width: 50px; margin-right:1px;">
+          <div class="sub">
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="swiper-pagination pg"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next ",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+  </div>
+  </div>
+  <div id="events" class="mevents">
+    <div class="eve">Past Events</div>
+    <div class="head gold-hd mobhead">
+      Our Past Events</div>
+    <div id="events-sub" class="scrollbox">
+
+      <a href="./esummit/index.html">
+        <div class="events-image mobevents-img1"
+          style="background-image: url(1.png); background-position: center center; background-size: cover;  margin-right:0px;">
+          <div class="events-overlay">
+
+            <div class="event-description mobevent-desc">
+              E-Summit is the annual signature event of E-Cell NIT-B, instilling entrepreneurial spirit. The goal of
+              E-Summit’22 was to enhance the financial education of young students and encourage startups and small
+              businesses. The event had been a great success in guiding people and training them in their respective
+              fields.
+              E-Cell was honored to have the presence of renowned guests like Nisant Mohta, Rachna Suneja, Aswini Bajaj,
+              and
+              many more.
+            </div>
+
+          </div>
+
+          <div class="event-title mobevent-title">
+            <p class="mobp">E-Summit</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="events-image mobevents-img2"
+        style="background-image: url(2.png); background-position: center center; background-size: cover; margin-right:0px;">
+        <div class="events-overlay2">
+
+          <div class="event-description mobevent-desc">
+            E-Carnival was a two-tier event consisting of Book Fair and Meme War, instilling and improving the ability
+            of
+            creative thinking. The Book Fair in partnership with some online bookstores was carried out to induce a
+            reading culture among students and encourage bookselling startups. On the other hand, Meme War aimed to
+            promote a non-conventional method of marketing using memes.
+          </div>
+
+        </div>
+
+        <div class="event-title mobevent-title">
+          <p class="mobp">E-Carnival</p>
+        </div>
+      </div>
+      <div class="events-image mobevents-img3"
+        style="background-image: url(pecharcha\ poster.png); background-position: center center; background-size: cover;margin-right:0px;">
+        <div class="events-overlay1">
+
+          <div class="event-description mobevent-desc">Pe-Charcha is the podcast series of E-Cell NIT-B that airs every
+            fortnight on
+            Youtube, ApplePodcasts, Spotify and Anchor. With intense discussion on various topics, it is the ideal
+            podcast
+            for the curious minds. The renowned speakers mentor aspiring enthusiasts while also sharing the experience
+            of
+            the speakers from a wide range of fields including Entrepreneurship, Sports, Finance, and many more.</div>
+
+        </div>
+        <div class="event-title mobevent-title">
+          <p class="mobp">Pe-Charcha</p>
+        </div>
+      </div>
+      <!-- <div class="events-image"
+              style="background-image: url(4.png); background-position: center center; background-size: cover;">
+              <div class="events-overlay">
+          
+                <div class="event-description">Rakshapreneur is an enlightening discussion on the Strategic Importance of Defence and Military Startups. It has witnessed the presence of war veteran Major General(R) GD Bakshi, SM, VSM. He spoke about the challenges and opportunities for a startup in the field of warfare.</div>
+          
+              </div>
+          
+              <div class="event-title">
+                <p>Raksha Preneur</p>
+              </div>
+            </div> -->
+    </div>
+  </div>
+  <div id="sponsor">
+    <!-- sponsors/footer page -->
+    <center>
+      <div class="sponsor-head mob-sponsor-head"> Sponsor</div>
+      <div class="spo-head">Meet Our Sponsor</div>
+      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem!</div>
+    </center>
+    <div id="sponsorIcons" class="mob-sponsorIcons">
+      <div class="sponsorItem mob-sponsorItem "><a href="https://skill-lync.com/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 5.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://ibentos.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 6.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://edvoy.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 7.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://aws.amazon.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 8.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.freshworks.com/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 9.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://taskade.org/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 10.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://startuplab.no/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 11.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.prepbytes.com/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 12.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="geeksforgeeks.org"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 13.png" alt="">
+        </a></div>
+      <div class="sponsorItem scrollbox mob-sponsorItem"><a href="https://www.codingninjas.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 14.png" alt=""></a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://primexbt.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 15.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://codingblocks.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 16.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.aicrntu.com/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 17.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.polygon.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 18.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://athenasquare.org/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 19.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.finlatics.com/"><img class="mob-img1"
+            src="./assets/images/sponsors/Asset 21.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://celo.org/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 22.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.elearnmarkets.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 23.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.indiaaccelerator.co/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 24.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 25.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="http://www.workspace.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 26.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.skwerup.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 27.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://devfolio.co/hackathons/applied"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 28.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://filecoin.io/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 29.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.notesnaka.com/homepage/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 30.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.t3.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 31.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 32.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.linuxlinks.com/linux-world/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 33.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.icreateedu.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 34.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.digitalocean.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 35.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://codingminutes.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 36.png" alt="">
+        </a></div>
+    </div>
+
+  </div>
+  <div id="sponsor">
+    <!-- sponsors/footer page -->
+    <center>
+      <div class="sponsor-head mob-sponsor-head"> Media Partners</div>
+      <div class="spo-head">Our Event Covered By</div>
+      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem!</div>
+    </center>
+    <div id="sponsorIcons" class="mob-sponsorIcons">
+      <div class="sponsorItem mob-sponsorItem "><a href="https://skill-lync.com/"><img class="mob-img1"
+            src="1 (1).gif" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://ibentos.com/"><img class="mob-img"
+            src="1 (2).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://edvoy.com/"><img class="mob-img"
+            src="1 (3).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://aws.amazon.com/"><img class="mob-img"
+            src="1 (4).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.freshworks.com/"><img class="mob-img1"
+            src="1 (5).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://taskade.org/"><img class="mob-img"
+            src="1 (6).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://startuplab.no/"><img class="mob-img"
+            src="1 (7).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.prepbytes.com/"><img class="mob-img1"
+            src="1 (8).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="geeksforgeeks.org"><img class="mob-img1"
+            src="1 (9).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem scrollbox mob-sponsorItem"><a href="https://www.codingninjas.com/"><img class="mob-img"
+            src="1 (10).jpeg" alt=""></a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://primexbt.com/"><img class="mob-img"
+            src="1 (11).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://codingblocks.com/"><img class="mob-img"
+            src="1 (12).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.aicrntu.com/"><img class="mob-img1"
+            src="1 (13).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.polygon.com/"><img class="mob-img"
+            src="1 (14).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://athenasquare.org/"><img class="mob-img1"
+            src="1 (15).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.finlatics.com/"><img class="mob-img1"
+            src="1 (16).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://celo.org/"><img class="mob-img"
+            src="1 (17).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.elearnmarkets.com/"><img class="mob-img"
+            src="1 (18).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.indiaaccelerator.co/"><img class="mob-img"
+            src="1 (19).jpeg" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img"
+            src="1 (20).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="http://www.workspace.com/"><img class="mob-img"
+            src="1 (21).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.skwerup.com/"><img class="mob-img"
+            src="1 (22).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://devfolio.co/hackathons/applied"><img class="mob-img"
+            src="1 (23).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://filecoin.io/"><img class="mob-img"
+            src="1 (32).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.notesnaka.com/homepage/"><img class="mob-img"
+            src="1 (25).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.t3.com/"><img class="mob-img"
+            src="1 (26).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img"
+            src="1 (33).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.linuxlinks.com/linux-world/"><img class="mob-img"
+            src="1 (28).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.icreateedu.com/"><img class="mob-img"
+            src="1 (29).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.digitalocean.com/"><img class="mob-img"
+            src="1 (30).png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://codingminutes.com/"><img class="mob-img"
+            src="1 (31).png" alt="">
+        </a></div>
+    </div>
+
+  </div>
+  <div id="sponsor">
+    <!-- sponsors/footer page -->
+    <center>
+      <div class="sponsor-head mob-sponsor-head"> Partners</div>
+      <div class="spo-head">Meet Our Outreach Partners</div>
+      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem!</div>
+    </center>
+    <div id="sponsorIcons" class="mob-sponsorIcons">
+      <div class="sponsorItem mob-sponsorItem "><a href=""><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://startuplab.no/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 11.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.prepbytes.com/"><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="geeksforgeeks.org"><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem scrollbox mob-sponsorItem"><a href=""><img class="mob-img" src="" alt=""></a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.polygon.com/"><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://athenasquare.org/"><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.finlatics.com/"><img class="mob-img1" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://celo.org/"><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class=""><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href=""><img class="mob-img" src="" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.notesnaka.com/homepage/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 30.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.t3.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 31.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="#"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 32.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.linuxlinks.com/linux-world/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 33.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.icreateedu.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 34.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://www.digitalocean.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 35.png" alt="">
+        </a></div>
+      <div class="sponsorItem mob-sponsorItem"><a href="https://codingminutes.com/"><img class="mob-img"
+            src="./assets/images/sponsors/Asset 36.png" alt="">
+        </a></div>
+    </div>
+
+  </div>
+  <section id="footer">
+    <div class="subscription">
+  
+      <div class="Subscribe">
+        <p class="subscribe-text">Subscribe our News Letter</p>
+        <form action="">
+          <div class="sub-box">
+            <input type="text" class="mail" placeholder="Enter your mail..." required>
+            <button class="btn1">submit</button>
+          </div>
+        </form>
+  
+      </div>
+    </div>
+  </section>
+  <div class="footer-tab">
+    <div style="
+              width: 45%;
+              height: 100%;
+              margin-top: -34px;
+          " id="conDet">
+  
+      <div class="foot-contact"style="align-items:none;">
+        <div class="contact-head">
+          <h2 style="
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    /* line-height: 35px; */
+                    /* text-align: center; */
+                    letter-spacing: 0.12em;
+                    margin-top: 0px;
+                    margin-bottom: 36px;
+                   
+                    color: #D99343;
+                ">Contact Us</h2>
+        </div>
+        <div class="info-our">
+          <div class="info-our-body">
+            <i class="fas fa-phone-volume">&nbsp;</i>
+            <a href="tel:+918989473997" style="color:#B5B5B6;">+91-7757877965</a>
+          </div>
+          <div class="info-our-body">
+            <i class="far fa-envelope">&nbsp;</i>
+            <a href="mailto: support@ecellnitb.com" style="color:#B5B5B6;"> support@ecellnitb.com</a>
+          </div>
+          <div class="info-our-body">
+            <i class="fas fa-map-marker-alt">&nbsp;</i>
+            <div style="
+                      display: inline-block;
+                      width: 22em;
+                      vertical-align: middle;
+                  " class="mact">Maulana Azad National Institute of Technology, Bhopal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="boxx" style="align-items:none;">
+      <div class="label">Write to us</div>
+      <form action="https://formspree.io/f/xzbwvlre" method="POST">
+        <div class="input-container">
+          <input type="text" required="" name="name" placeholder="Fullname">
+        </div>
+        <div class="input-container">
+          <input type="mail" required="" name="email" placeholder="Email">
+        </div>
+        <div class="input-container">
+          <textarea type="text" required="" name="messege" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" class="btn">
+      </form>
+    </div>
+    <div class="box1">
+      <div class="label1">Instagram Feed</div> 
+      <br>
+      <br>
+      <div class="rows">
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="rows">
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  <!-- nav script starts here -->
+  <script>
+    const navSlide = () => {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-items');
+      const navLinks = document.querySelectorAll('.nav-link');
+      // Toggle Nav
+
+      burger.addEventListener('click', () => {
+        navLinks.forEach((link, index) => {
+          link.style.animationDelay = '0ms';
+        });
+        if (document.querySelector('.nav-items').classList.contains('nav-active')) {
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'CloseLinkFade 1s ease forwards';
+          });
+          setTimeout(() => {
+            nav.classList.toggle('nav-active');
+          }, 250);
+        } else {
+          nav.classList.toggle('nav-active');
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'navLinkFade 1s ease forwards';
+            link.style.animationDelay = ((index + 1) * 300) + 'ms';
+          });
+        }
+
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+      });
+
+
+    }
+    navSlide();
+    function closeNav() {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-items');
+        if (window.innerWidth < 1110) {
+          nav.classList.remove("nav-active");
+          burger.classList.remove('toggle');
+
+        }
+      }
+  </script>
+  <!-- nav script ends here -->
+  <style>
+    .events-overlay {
+      position: absolute;
+      bottom: 0;
+  
+      background-color: #f2a53e;
+      color: #fff;
+  
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+  
+      transition: .5s ease;
+    }
+  
+    .events-overlay2 {
+      position: absolute;
+      bottom: 0;
+  
+      background-color: rgb(82, 82, 226);
+      color: #fff;
+  
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+  
+      transition: .5s ease;
+    }
+  
+    .events-overlay1 {
+      position: absolute;
+      bottom: 0;
+  
+      background-color: rgb(104, 48, 104);
+      color: #fff;
+  
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+  
+      transition: .5s ease;
+    }
+  
+    .initiatives-images {
+      width: 77.08333%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 4%
+    }
+  
+    .events-image {
+      position: relative;
+      width: 301px;
+      height: 450.9px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  
+    .event-title {
+      position: absolute;
+      bottom: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      transition: .5s ease;
+      text-align: center;
+      width: 100%;
+      height: 63px;
+      background: #303030;
+      border-radius: 0 0 10px 10px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+    }
+  
+    .event-description {
+      display: none;
+  
+      transition: .5s ease;
+      transition-delay: .1s;
+  
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: .07em;
+      text-align: left;
+      color: #fff;
+      overflow-wrap: break-word;
+  
+      padding: 42px 30px 40px 30px;
+    }
+  
+    .events-image:hover .events-overlay {
+      height: 100%
+    }
+  
+    .events-image:hover .events-overlay1 {
+      height: 100%
+    }
+  
+    .events-image:hover .events-overlay2 {
+      height: 100%
+    }
+  
+    .events-image:hover .event-title {
+      height: 0;
+      visibility: hidden;
+      transition: height .5s ease
+    }
+  
+    .events-image:hover .event-description {
+      display: block
+    }
+  </style>
+  <script>
+    let bullets = document.getElementsByClassName("event-timeline");
+
+    Array.from(bullets).forEach(e => {
+      e.addEventListener("click", () => {
+        e.classList.toggle("active");
+      });
+    });
+
+    function changeTOBlack() {
+      document.querySelector(".btn-jan").classList.add("btn-feb-click");
+      document.querySelector(".btn-feb").classList.remove("btn-feb-click");
+      if (document.querySelector(".timeline").classList.contains("timeline-click")) {
+        document.querySelector(".timeline").classList.remove("timeline-click");
+        document.querySelector(".timeline2").classList.remove("timeline2-click");
+      }
+
+
+    }
+    function changeTOBlue() {
+      document.querySelector(".btn-feb").classList.add("btn-feb-click");
+      document.querySelector(".btn-jan").classList.add("btn-jan-click");
+      document.querySelector(".btn-jan").classList.remove("btn-feb-click");
+      if (!document.querySelector(".timeline2").classList.contains("timeline2-click")) {
+        document.querySelector(".timeline2").classList.add("timeline2-click");
+        document.querySelector(".timeline").classList.add("timeline-click");
+      }
+
+
+
+    }
+  </script>
+  <script src="./wow.min.js"></script>
+  
+  <script>
+
+
+
+    var wow = new WOW({
+      offset: 100,        // distance to the element when triggering the animation (default is 0)
+      mobile: true       // trigger animations on mobile devices (default is true)
+    });
+    wow.init();
+
+  </script>
+  </body>
+  <script>
+    // navbar shrink script starts here
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+
+
+      if (window.innerWidth > 1110) {
+        let nav = document.getElementsByTagName("nav")[0].style;
+        let logo = document.getElementById("logo").style;
+        let navItem = document.getElementsByClassName("nav")[0].style;
+
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          nav.height = "5.875rem";
+          logo.width = "6.75rem";
+        } else {
+          nav.height = "8.25rem";
+          logo.width = "10.875rem";
+        }
+      }
+
+
+
+      if (document.documentElement.scrollTop < 220) {
+        let progress = Math.trunc(document.documentElement.scrollTop) / 220;
+
+        document.getElementsByClassName("wall-heading")[0].style.opacity = (1 - (0.9 * progress));
+
+        document.getElementsByClassName("sub-heading")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("tagline")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("social")[0].style.opacity = (1 - (0.9 * (progress)));
+      }
+    }
+  // navbar shrink script ends here
+  </script>
+  <!-- <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+  
+    gsap.utils.toArray(".scrollbox").forEach(function (elem, i) {
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter: function ({ progress, direction, isActive }) {
+  
+          let hrSlideLeft = document.getElementById("hrSlide");
+          let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
+          hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
+          hrSlideLeft.style.width = wid + "px";
+          for (n = 0; n < 4; n++) {
+            if (n == i) {
+              document.getElementsByTagName("li")[n].firstChild.style.color = "rgba(217, 147, 67, 1)";
+            } else {
+              document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+            }
+          }
+  
+  
+  
+  
+        },
+        onEnterBack: function ({ progress, direction, isActive }) {
+  
+          let hrSlideLeft = document.getElementById("hrSlide");
+          let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
+          // hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i!=0||i!=1)?((i+1)*2):(-2)) + 10 + "px";
+  
+          hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
+          hrSlideLeft.style.width = wid + "px";
+          for (n = 0; n < 4; n++) {
+            document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+          }
+          document.getElementsByTagName("li")[i].firstChild.style.color = "rgba(217, 147, 67, 1)";
+  
+  
+  
+        },
+        onLeave: function () {
+  
+        },
+        onLeaveBack: function () {
+          // console.log("left from top", i);
+          // if (i != 0) {
+          //   let prevElem = false;
+          //   if (i != 0) { prevElem = document.getElementsByTagName("li")[i] };
+          //   let hrSlideLeft = document.getElementById("hrSlide");
+          //   let wid = (prevElem) ? prevElem.offsetWidth - 20 : 0;
+          //   let a = Number(hrSlideLeft.style.left.split("px")[0]) - ((i != 0) ? 30 : 0) - wid + "px";
+          //   let b = document.getElementsByTagName("li")[i - 1].offsetWidth - 20 + "px";
+          //   hrSlideLeft.style.left = a;
+          //   hrSlideLeft.style.width = b;
+  
+          // }
+          if (i == 0) {
+            for (n = 0; n < 4; n++) {
+              document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+            }
+          }
+  
+        },
+      });
+    });
+  </script> -->
+  </body>
+  
+  
+  
+  </html>
