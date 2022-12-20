@@ -4,7 +4,8 @@ body{
     box-sizing: border-box;
 }
 #speakers{
-    background-image: url(../images/pexels-brett-sayles-3114462\ 1.png);
+    background-image: url(../speaker\ background.png);
+    background-size: cover;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 70px;
