@@ -35,6 +35,9 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <!--ayushi script-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
@@ -1002,14 +1005,14 @@ color: #E8E8E8;
         responsive: [{
             breakpoint: 992,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
+              slidesToShow: 1,
+              slidesToScroll: 2
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           },
@@ -1408,7 +1411,7 @@ color: #E8E8E8;
     <div class="swiper mySwiper class" style="width:80%; margin-top:-3vh;">
 
       <div class="swiper-wrapper myclass">
-        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1425,7 +1428,7 @@ color: #E8E8E8;
           </div>
         </div>
 
-        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1434,7 +1437,7 @@ color: #E8E8E8;
           </div>
         </div>
 
-        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1443,7 +1446,7 @@ color: #E8E8E8;
           </div>
 
         </div>
-        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1452,7 +1455,7 @@ color: #E8E8E8;
           </div>
           <div class="name"></div>
         </div>
-        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1460,7 +1463,7 @@ color: #E8E8E8;
           </div>
 
         </div>
-        <div class="swiper-slide ayu-box" style="width:50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box" >
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1469,7 +1472,7 @@ color: #E8E8E8;
           </div>
 
         </div>
-        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box" >
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1478,7 +1481,7 @@ color: #E8E8E8;
           </div>
 
         </div>
-        <div class="swiper-slide ayu-box" style="width: 50px; margin-right:1px;">
+        <div class="swiper-slide ayu-box">
           <div class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse rerum dicta pariatur fuga
             quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis nihil iusto, facilis
             debitis
@@ -1492,7 +1495,7 @@ color: #E8E8E8;
       <div class="swiper-button-next nxt"></div>
       <div class="swiper-button-prev prev"></div>
     </div>
-    <div class="swiper mySwiper class" style="width:80%">
+    <div class="swiper mySwiper class" style="width:80%;  height:12vh;">
 
       <div class="swiper-wrapper myclass">
         <div class="swiper-slide name" style="width: 50px; margin-right:1px;">
@@ -1764,8 +1767,8 @@ color: #E8E8E8;
   <div id="sponsor">
     <!-- sponsors/footer page -->
     <center>
-      <div class="sponsor-head mob-sponsor-head"> Media Partners</div>
-      <div class="spo-head">Our Event Covered By</div>
+      <div class="sponsor-head mob-sponsor-head">  Partners</div>
+      <div class="spo-head">Meet Our Outreach Partners</div>
       <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem!</div>
     </center>
@@ -1868,8 +1871,8 @@ color: #E8E8E8;
   <div id="sponsor">
     <!-- sponsors/footer page -->
     <center>
-      <div class="sponsor-head mob-sponsor-head"> Partners</div>
-      <div class="spo-head">Meet Our Outreach Partners</div>
+      <div class="sponsor-head mob-sponsor-head"> Media Partners</div>
+      <div class="spo-head">Our event Covered By</div>
       <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, exercitationem!</div>
     </center>
@@ -1946,7 +1949,7 @@ color: #E8E8E8;
     </div>
 
   </div>
-  <section id="footer">
+  <section id="footer" style="padding-top:20px;">
     <div class="subscription">
   
       <div class="Subscribe">
@@ -1963,9 +1966,9 @@ color: #E8E8E8;
   </section>
   <div class="footer-tab">
     <div style="
-              width: 45%;
+              width: 44%;
               height: 100%;
-              margin-top: -34px;
+              margin-top: -90px;
           " id="conDet">
   
       <div class="foot-contact"style="align-items:none;">
@@ -2359,6 +2362,9 @@ color: #E8E8E8;
       });
     });
   </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
   
   

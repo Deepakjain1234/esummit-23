@@ -177,7 +177,7 @@ height: 3px;
         width:auto;
         height:auto;
         margin-top:8vh;
-    
+    width:50px;
         margin-right:1px;
         background: #959595;
         border-radius: 0.721429px;
@@ -431,17 +431,17 @@ background: rgba(5, 5, 6, 0.5);
   justify-content:space-around;
   align-items: center;
 }
-.eve{
+.eve {
   font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 54px;
-    letter-spacing: 0.03em;
-   text-align:center;
-   margin-top:10rem;
-   margin-left:0px;
-    color: #E8E8E8;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 54px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 8rem;
+  margin-left: 8vw;
+  color: #E8E8E8;
 }
 .head{
  padding-top: 10px;
@@ -497,11 +497,12 @@ margin-bottom: 70px;
 .pg{
   margin-top:2vh;
 }
-.box1{
-  padding: 4px 0px;
+.box1 {
+  padding: -10px 0px;
   margin-left: -2vw;
   font-family: "Noto Sans", sans-serif;
   width: 17%;
+  margin-top: -5vh;
   padding-left: 5%;
   border-left: solid 1px #555;
 }
@@ -767,7 +768,7 @@ display: flex;
 }
  .foot-contact {
    font-family: 'Noto Sans';
-   margin-left: -16vw;
+   margin-left: -18vw;
  }
 .label{
   font-family: 'Raleway';font-style: normal;font-weight: 600;font-size: 20px;line-height: 23px;
@@ -1033,7 +1034,7 @@ display: flex;
         position: relative;
         left: 2.5px;
         right: 3px;
-        width: auto;
+        width:80px;
         height: auto;
         margin-top: 8vh;
     
@@ -1479,11 +1480,14 @@ display: flex;
     .events-image{
       margin: 0px;
     }
-    .contact-head {
-      display: flex;
-      width: 80vw;
-      margin-left: 12vw;
+    .pg{
+      margin-top:1vh;
     }
+        .contact-head {
+          display: flex;
+          width: 80vw;
+          margin-left:6rem;
+        }
      label{
       display:inline;
      }
@@ -1706,18 +1710,48 @@ display: flex;
       border-radius: 0.721429px;
     }
   
-    .sub {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 17px;
-      letter-spacing: 0.03em;
-      padding: 10px;
-      color: #FFFFFF;
-      display: block;
-    }
-    
+     .sub {
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 6px;
+       line-height: 10px;
+       letter-spacing: 0.03em;
+       padding: 5px;
+       color: #FFFFFF;
+       display: block;
+     }
+        .sub3 {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 7px;
+         
+          letter-spacing: 0.03em;
+          padding: 0.5vw 1vw;
+          color: #FFFFFF;
+          display: block;
+        }
+        .prev{
+          font-size:2px;
+          margin-left:-35px;
+        }
+        .nxt{
+          width:1vw;
+          height:1vh;
+          margin-right:-35px;
+        }
+                .sub1 {
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 9px;
+                  line-height: 10px;
+                  letter-spacing: 0.03em;
+                  color: #FFFFFF;
+                  padding-left: 2px;
+                  display: block;
+                }
             .box1 {
               margin-left: -5vw;
               margin-top: 4vh;
@@ -1929,7 +1963,7 @@ display: flex;
             }
     .info-our {
       width: 75vw;
-      margin-left: -3vw;
+        margin-left: 3rem;
     }
         .btn {
           background-color: black;
@@ -1998,6 +2032,7 @@ display: flex;
   font-family: 'Noto Sans';
   width: 80vw;
   margin-left: -28vw;
+  padding-top: 13vh;
 }
     .head-mbl {
   
@@ -2038,19 +2073,19 @@ display: flex;
       color: #0044F2;
     }
   
-     .Subscribe {
-       height: auto;
-       width: 120vw;
-       display: flex;
-       justify-content: space-between;
-       font-family: 'Poppins', sans-serif;
-       font-style: normal;
-       font-weight: 600;
-       font-size: 36px;
-       margin-left: 4vw;
-       padding-top: 4.5vh;
-       color: #000000;
-     }
+         .Subscribe {
+           height: auto;
+           width: 120vw;
+           display: flex;
+           justify-content: space-between;
+           font-family: 'Poppins', sans-serif;
+           font-style: normal;
+           font-weight: 600;
+           font-size: 36px;
+           margin-left: 4vw;
+           padding-top: 0vh;
+           color: #000000;
+         }
 .btn1 {
   /* right: -17vw; */
   top: 0vh;
