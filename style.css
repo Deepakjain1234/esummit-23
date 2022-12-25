@@ -502,7 +502,7 @@ margin-bottom: 70px;
   margin-left: -2vw;
   font-family: "Noto Sans", sans-serif;
   width: 17%;
-  margin-top: -5vh;
+  margin-top: -1vh;
   padding-left: 5%;
   border-left: solid 1px #555;
 }
@@ -608,7 +608,7 @@ margin-bottom: 70px;
   /* margin-top:50px; */
   cursor: pointer;
   position: relative;
-  border-image: linear-gradient(180deg, rgba(217, 147, 67, 1), rgba(176, 119, 54, 1)) 1;
+  border-image: linear-gradient( rgb(247, 246, 250),rgb(170, 165, 184)) 1;
   padding: 10px 50px;
   font-family: 'Raleway';
   font-style: normal;
@@ -617,7 +617,7 @@ margin-bottom: 70px;
   line-height: 13px;
   text-align: center;
   letter-spacing: 0.12em;
-  color: #CB8A3F;
+  color: #1499FF;
   transition: 0.4s;
 }
 
@@ -774,7 +774,7 @@ display: flex;
   font-family: 'Raleway';font-style: normal;font-weight: 600;font-size: 20px;line-height: 23px;
    text-align: left;
     letter-spacing: 0.12em;
-    color: #D99343;
+    color: #1499FF;
     margin-bottom: 5px;
     position: relative;
     display: inline;
@@ -804,7 +804,7 @@ display: flex;
   font-family: 'Inter';font-style: normal;font-weight: 600;font-size:19px;line-height: 20px;
    text-align: center;
     letter-spacing: 0.12em;
-    color: #D99343;
+    color:#1499FF;
     padding-bottom: 3vh;
     position: relative;
     display: inline;
