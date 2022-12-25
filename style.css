@@ -822,7 +822,14 @@ display: flex;
 
   /* Amritanshu css tab-responsive starts */
 
-
+@media screen and (max-width:900px) {
+.foot-contact {
+    font-family: 'Noto Sans';
+    width: 80vw;
+    margin-left: -30vw;
+    padding-top: 13vh;
+  }
+}
 
   @media (min-width:980px) and (max-width:1204px){
 
@@ -1083,6 +1090,21 @@ display: flex;
               padding: 15px 15px;
               /* justify-content: space-around; */
   }
+.foot-contact {
+  font-family: 'Noto Sans';
+  width: 80vw;
+  margin-left: -31vw;
+  padding-top: 85px;
+  margin-top: 50px;
+}
+                .box1 {
+                  margin-left: -2vw;
+                  font-family: "Noto Sans", sans-serif;
+                  width: 17%;
+                  margin-top: -51vh;
+                  padding-left: 5%;
+                  border-left: solid 1px #555;
+                }
   .mact{
     width: 19em !important;
   }
@@ -1145,15 +1167,15 @@ display: flex;
       color: #ffffff;
     }
   
-    .boxx {
-      padding: 4px 0px;
-      margin-left: 70px;
-      font-family: "Noto Sans", sans-serif;
-      width: 45%;
-      padding-left: 4%;
-    
-    }
-  
+ .boxx {
+   padding: 4px 0px;
+   margin-left: 70px;
+   font-family: "Noto Sans", sans-serif;
+   width: 45%;
+   margin-top: -205px;
+   top: 20px;
+   padding-left: 4%;
+ }
     .input-container {
       position: relative;
       margin-bottom: 15px;
@@ -1230,30 +1252,29 @@ display: flex;
       color: #b5b5b6;
     }
   
-    .btn {
-      background-color: black;
-      /* outline: none; */
-      /* border: 0; */
-      /* color: #fff; */
-      padding: 10px 20px;
-      text-transform: uppercase;
-      /* margin-top:50px; */
-      cursor: pointer;
-      position: relative;
-      border-image: linear-gradient(180deg, rgba(217, 147, 67, 1), rgba(176, 119, 54, 1)) 1;
-      padding: 10px 50px;
-      font-family: 'Raleway';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 11px;
-      line-height: 13px;
-      text-align: center;
-      margin-bottom:4vh;
-      letter-spacing: 0.12em;
-      color: #CB8A3F;
-      transition: 0.4s;
-    }
-  
+     .btn {
+       background-color: black;
+       /* outline: none; */
+       /* border: 0; */
+       /* color: #fff; */
+       padding: 10px 20px;
+       text-transform: uppercase;
+       /* margin-top: 50px; */
+       cursor: pointer;
+       position: relative;
+       border-image: linear-gradient(180deg, rgba(217, 147, 67, 1), rgba(176, 119, 54, 1)) 1;
+       padding: 10px 50px;
+       font-family: 'Raleway';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 11px;
+       line-height: 13px;
+       text-align: center;
+       margin-bottom: 4vh;
+       letter-spacing: 0.12em;
+       color: #1499FF;
+       transition: 0.4s;
+     }
     .btn:hover {
       background: linear-gradient(180deg, #D99343 0%, #B07736 100%);
       color: white;
@@ -1287,14 +1308,14 @@ display: flex;
       transform: scale(1.1);
     }
   
-    .footer-tab {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      padding: 39px 147px;
-      justify-content: center;
-    }
+     .footer-tab {
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       align-items: center;
+       padding: 21px 139px;
+       justify-content: center;
+     }
   
     .head-mbl {
   
@@ -1367,42 +1388,47 @@ display: flex;
   
   
     }
-  
+        .sub-box {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 50vw;
+          margin-top: 13px;
+        }
     .subscribe-text {
       margin-top: 5px;
       margin-left: 1px;
     font-size:26px;
     overflow:hidden;
   }
-            .mail {
-              box-sizing: border-box;
-              overflow: hidden;
-              display: inline-block;
-              width: 30vw;
-              height: 60px;
-              background: #F3F3F3;
-              border: 2px solid #F3F3F3;
-              box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
-              border-radius: 0px;
-              margin-left:10vw;
-            }
-                        .btn1 {
-      
-                          border: none;
-                          position: relative;
-                          width: 5vw;
-                          height: 60px;
-                          background: linear-gradient(270deg, #00E0FF 0%, #0044F2 100%);
-                          font-family: 'Inter';
-                          font-style: normal;
-                          font-weight: 600;
-                          font-size: 16px;
-                          line-height: 24px;
-                          color: #FFFFFF;
-                    margin-left: -80vw;
-                      margin-top: 4vh;
-                        }
-      
+        .mail {
+          box-sizing: border-box;
+          overflow: hidden;
+          display: inline-block;
+          width: 30vw;
+          height: 60px;
+          background: #F3F3F3;
+          border: 2px solid #F3F3F3;
+          box-shadow: 0px 12px 20px rgb(0 0 0 / 15%);
+          border-radius: 0px;
+          margin-left: 10vw;
+     
+        }
+    .btn1 {
+      border: none;
+      position: relative;
+      width: 9vw;
+      height: 60px;
+      background: linear-gradient(270deg, #00E0FF 0%, #0044F2 100%);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-left: 0vw;
+      margin-top: 0vh;
+    }
             #container {
               display: flex;
               width: 100vw;
@@ -1475,7 +1501,7 @@ display: flex;
   }
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:699px){
   
     .events-image{
       margin: 0px;
