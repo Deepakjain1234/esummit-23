@@ -1591,6 +1591,7 @@ display: flex;
     }
     .eve{
       font-size: 25px;
+      padding-top: 60px;
     }
     .head {
      
@@ -1811,14 +1812,20 @@ display: flex;
        scale: 0.85;
      }
     .sponsor-head{
-      font-size:32px;
+      font-size:25px;
+      padding-top: 60px;
+      padding-bottom: 0;
     }
   .spo-head{
     font-size:30px;
+    line-height: 35px;
    justify-content: center;
+   margin-bottom: 40px;
   }
   .comment{
     font-size:15px;
+    text-align: justify;
+    line-height: 27px;
   }
     .box {
       border: none;
@@ -1843,9 +1850,11 @@ display: flex;
           width: 100vw;
           height: auto;
           display: flex;
+          padding-bottom: 50px;
           flex-direction: column;
           background: url(./past\ events\ bg.png);
-          background-size: contain;
+          background-size: cover;
+          background-attachment: fixed;
           background-position: center center;
         }
     
