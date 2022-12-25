@@ -215,6 +215,7 @@ height: 3px;
     letter-spacing: 0.03em;
     padding-left: 2vw;
     padding-top:2vw;
+    padding-bottom:1vw;
     color: #FFFFFF;
     display: block;
 }
@@ -245,8 +246,8 @@ height: 3px;
   margin-bottom:2vh
 }
 .ayu-img img{
-  height:38px;
-  width:38px;
+  height:50px;
+  width:50px;
   border-radius:50%;
   display:flex;
 }
