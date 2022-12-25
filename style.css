@@ -19,7 +19,7 @@ body {
 }
 .peoplesay{
     width:100vw;
-    height:110vh;
+    height:auto;
     background:url(executives-joking-laughing-office3\ 1.png);
     overflow:hidden;
 }
