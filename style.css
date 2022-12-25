@@ -19,7 +19,7 @@ body {
 }
 .peoplesay{
     width:100vw;
-    height:auto;
+    height:110vh;
     background:url(executives-joking-laughing-office3\ 1.png);
     overflow:hidden;
 }
@@ -174,8 +174,8 @@ height: 3px;
     position:relative;
     left:2.5px;
     right:3px;
-        width:auto;
-        height:auto;
+  
+        height:25vh!important;
         margin-top:8vh;
     width:50px;
         margin-right:1px;
@@ -210,10 +210,11 @@ height: 3px;
   font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 11px;
     letter-spacing: 0.03em;
-    padding: 0.5vw 1vw;
+    padding-left: 2vw;
+    padding-top:2vw;
     color: #FFFFFF;
     display: block;
 }
@@ -228,22 +229,29 @@ height: 3px;
   color: #FFFFFF;
   display: block;
 }
+.fleco{
+  display:flex;
+}
 .sub1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding-left: 20px;
-  display: block;
+  padding-left:5.4vw;
+  display:flex;
+  margin-bottom:2vh
 }
-
+.ayu-img img{
+  height:38px;
+  width:38px;
+  border-radius:50%;
+  display:flex;
+}
 #sponsor {
   background: url('pexels-adrien-olichon-2387793\ 1.png');
-  background-attachment: fixed;
-  background-size: cover;
   width: 100%;
 }
 .spo-head{
@@ -414,10 +422,9 @@ input:focus, textarea:focus, select:focus{
 
 #events{
   height: 123vh;
-
-  background-image: url(./schedule.png) !important;
+background: rgba(5, 5, 6, 0.5);
+  background-image: url(../schedule.png);
   background-size: cover;
-  text-align: center;
 }
 .mevents{
   height: 123vh;
@@ -442,13 +449,14 @@ input:focus, textarea:focus, select:focus{
   line-height: 54px;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 8rem;
- 
+  margin-top: 8rem;
+  margin-left: 8vw;
   color: #E8E8E8;
 }
 .head{
  padding-top: 10px;
-
+padding-left: 300px;
+margin-left:19vw;
 margin-bottom: 70px;
 }
 #location {
@@ -869,7 +877,28 @@ display: flex;
         height: 100vh;
         background: url(executives-joking-laughing-office3\ 1.png);
       }
-    
+    .sub3
+    {
+font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  padding: 0.5vw 2vw;
+  color: #FFFFFF;
+  display: block;
+    }
+    .sub1{
+font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 0.5vw 2vw;
+    }
       .writeup {
         position: relative;
         margin-bottom:2vh;
@@ -1043,7 +1072,7 @@ display: flex;
         position: relative;
         left: 2.5px;
         right: 3px;
-        width:80px;
+        width:10vw;
         height: auto;
         margin-top: 8vh;
     
@@ -1056,10 +1085,10 @@ display: flex;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 17px;
         letter-spacing: 0.03em;
-        padding: 10px;
+        padding: 25px;
         color: #FFFFFF;
         display: block;
       }
@@ -1243,6 +1272,7 @@ display: flex;
       ;
     }
   
+
     .info-our-body {
       font-family: "Montserrat";
       font-style: normal;
@@ -1504,7 +1534,6 @@ display: flex;
   }
 
   @media screen and (max-width:699px){
-
   
     .events-image{
       margin: 0px;
@@ -1589,21 +1618,31 @@ display: flex;
       display: flex;
       justify-content: center;
     }
-    .eve{
-      font-size: 25px;
-      padding-top: 60px;
-    }
     .head {
      
       font-family: "Raleway";
       font-style: normal;
-      font-weight: 800;
-      font-size: 30px;
-      line-height: 45px;
-     
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 53px;
+      margin-top:5rem;
       margin-bottom: 40px;
-     padding-top: 0;
+      margin-left:2vw;
    
+    }
+    .sub3{
+   
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          width:40vw;
+          font-size: 11px;
+          line-height: 17px;
+          letter-spacing: 0.03em;
+          padding: 0.5vw 26vw;
+          color: #FFFFFF;
+          display: block;
+        
     }
         .heading {
           font-family: 'Inter';
@@ -1727,14 +1766,14 @@ display: flex;
     }
   
     .write {
-      margin-top: 15vh;
+      margin-top: 10vh;
     }
   
     .ayu-box {
       position: relative;
       left: 2.5px;
       right: 3px;
-      width:20vh;
+      width:10vh;
       height:auto;
       margin-top: 8vh;
   
@@ -1747,24 +1786,16 @@ display: flex;
        font-family: 'Inter';
        font-style: normal;
        font-weight: 400;
-       font-size: 6px;
+       font-size: 8px;
        line-height: 10px;
        letter-spacing: 0.03em;
-       padding: 5px;
+       padding: 28px;
        color: #FFFFFF;
        display: block;
      }
-        .sub3 {
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 7px;
-         
-          letter-spacing: 0.03em;
-          padding: 0.5vw 1vw;
-          color: #FFFFFF;
-          display: block;
-        }
+     .sub3{
+
+     }
         .prev{
           font-size:2px;
           margin-left:-35px;
@@ -1782,8 +1813,8 @@ display: flex;
                   line-height: 10px;
                   letter-spacing: 0.03em;
                   color: #FFFFFF;
-                  padding-left: 2px;
-                  display: block;
+                  padding:0.5vw 30vw;
+                 
                 }
             .box1 {
               margin-left: -5vw;
@@ -1812,20 +1843,14 @@ display: flex;
        scale: 0.85;
      }
     .sponsor-head{
-      font-size:25px;
-      padding-top: 60px;
-      padding-bottom: 0;
+      font-size:32px;
     }
   .spo-head{
     font-size:30px;
-    line-height: 35px;
    justify-content: center;
-   margin-bottom: 40px;
   }
   .comment{
     font-size:15px;
-    text-align: justify;
-    line-height: 27px;
   }
     .box {
       border: none;
@@ -1850,14 +1875,16 @@ display: flex;
           width: 100vw;
           height: auto;
           display: flex;
-          padding-bottom: 50px;
           flex-direction: column;
           background: url(./past\ events\ bg.png);
           background-size: cover;
-          background-attachment: fixed;
           background-position: center center;
         }
-    
+    #sponsor {
+      background: url(pexels-adrien-olichon-2387793\ 1.png);
+      width: 100vw;
+      height: auto;
+    }
      #events-sub {
        display: flex;
        flex-direction: row;
@@ -1865,7 +1892,7 @@ display: flex;
        align-content: center;
        justify-content: space-around;
        align-items: center;
-       width: 100vw;
+       width: 105vw;
      }
     #location {
       width: 100%;
