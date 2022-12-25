@@ -1504,6 +1504,7 @@ display: flex;
   }
 
   @media screen and (max-width:699px){
+
   
     .events-image{
       margin: 0px;
@@ -1588,16 +1589,19 @@ display: flex;
       display: flex;
       justify-content: center;
     }
+    .eve{
+      font-size: 25px;
+    }
     .head {
      
       font-family: "Raleway";
       font-style: normal;
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 53px;
-      margin-top:5rem;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 45px;
+     
       margin-bottom: 40px;
-      margin-left:2vw;
+     padding-top: 0;
    
     }
         .heading {
@@ -1841,14 +1845,10 @@ display: flex;
           display: flex;
           flex-direction: column;
           background: url(./past\ events\ bg.png);
-          background-size: cover;
+          background-size: contain;
           background-position: center center;
         }
-    #sponsor {
-      background: url(pexels-adrien-olichon-2387793\ 1.png);
-      width: 100vw;
-      height: auto;
-    }
+    
      #events-sub {
        display: flex;
        flex-direction: row;
@@ -1856,7 +1856,7 @@ display: flex;
        align-content: center;
        justify-content: space-around;
        align-items: center;
-       width: 105vw;
+       width: 100vw;
      }
     #location {
       width: 100%;
