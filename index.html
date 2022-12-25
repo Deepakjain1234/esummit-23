@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Summit</title>
   <!-- <link rel="stylesheet" href="mobile.css" /> -->
+  <link rel="stylesheet" href="./style3.css">
 
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="style.css" />
@@ -106,6 +107,8 @@
     text-align: justify;
     letter-spacing: 0.05em;
     color: #E8E8E8;
+    word-spacing: -2px;
+    word-break: break-all;
   }
 
   .circleGauge {
@@ -191,7 +194,7 @@
     }
 
     .parent {
-      font-size: 12px;
+      font-size: 8px;
     }
   }
 
@@ -201,12 +204,159 @@
 
     /* footer causing overflow making menu burger icon outside viewport; */
     html {
-      font-size: 9px;
+      font-size: 8px !important;
     }
 
     .parent {
-      font-size: 9px;
+      font-size: 13px;
     }
+
+    .itbdiv {
+      justify-content: center;
+    }
+
+    .itbhead {
+      margin-top: unset;
+      margin-bottom: unset;
+    }
+
+    .burger div {
+      width: 4.5625rem;
+      height: 0.475rem;
+      /* background-color: #EA8A01; */
+      background-color: white;
+      margin: 0.8125rem;
+      border-radius: 3px;
+      transition-duration: 500ms;
+    }
+
+    .burger {
+      display: block;
+      position: fixed;
+      right: -1rem;
+      top: 1.3rem;
+      margin-right: 0.625rem;
+      z-index: 1001;
+    }
+
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-2.0625rem, 1.75rem) !important;
+    }
+
+    nav {
+      background: rgba(4, 7, 13, 0.85) !important;
+      padding: 10px 20px;
+    }
+
+    #first-section {
+      height: calc(100vh - 23.375rem - 7rem) !important;
+      text-align: center;
+
+      background: url(./mearth.jpg) !important;
+      /* height: 100vh !important; */
+      display: flex !important;
+      align-content: center !important;
+
+      justify-content: center !important;
+      background-size: 100vw calc(100vh - 26rem) !important;
+      background-position-y: -5rem !important;
+      background-repeat: no-repeat !important;
+      background-color: #050608 !important;
+
+      align-items: flex-start !important;
+      overflow: hidden;
+      
+
+    }
+
+    #HeRe{
+      margin-top: 22rem;
+    }
+
+    #eRgf {
+      max-width: unset !important;
+    }
+
+    .wall-heading {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 34.2638px !important;
+      line-height: 38px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+
+    }
+
+    .itbdiv {
+      justify-content: space-evenly !important;
+    }
+
+    .sub-heading {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34.2638px !important;
+      line-height: 39px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+    }
+
+    .tagline {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 8.01937px !important;
+      line-height: 10px !important;
+      text-align: center;
+      letter-spacing: 0.03em !important;
+      padding: 0px 41px;
+    }
+
+    .social-bigs {
+      display: none;
+      position: unset;
+      /* z-index: 1000; */
+      /* display: flex !important; */
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center !important;
+      /* right: 50px; */
+      /* bottom: 50px; */
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      font-size: 2em !important;
+      /* top: 9em !important; */
+      align-content: center;
+      padding-top: 0.8125rem;
+    }
+
+    .social-bigs::before {
+      display: none;
+    }
+
+    .itbdesc {
+      text-align: justify;
+    }
+
+    .nav-link {
+      font-size: 2.5rem;
+    }
+
+    #logo {
+      /* height: 5.875rem; */
+      width: 15.875rem;
+      margin: unset;
+      margin-top: 2rem;
+      transition: 0.4s;
+    }
+
+    #HeRe {
+      position: relative;
+      /* top: -28px; */
+    }
+
   }
 
   @media (max-width: 400px) {
@@ -214,6 +364,10 @@
     html {
       font-size: 7px !important;
 
+    }
+
+    #HeRe{
+      margin-top: 25rem;
     }
 
     .parent {
@@ -238,15 +392,19 @@
     .burger {
       display: block;
       position: fixed;
-      right: 2rem;
-      top: 4.3rem;
+      right: -1rem;
+      top: 1.3rem;
       margin-right: 0.625rem;
       z-index: 1001;
     }
 
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-2.0625rem, 1.75rem) !important;
+    }
+
     nav {
       background: rgba(4, 7, 13, 0.85) !important;
-      padding: 10px 0px;
+      padding: 10px 20px;
     }
 
     #first-section {
@@ -257,17 +415,24 @@
       /* height: 100vh !important; */
       display: flex !important;
       align-content: center !important;
-      align-items: center !important;
+
       justify-content: center !important;
-      background-size: cover !important;
+      background-size: 100vw calc(100vh - 26rem) !important;
       background-position-y: -5rem !important;
       background-repeat: no-repeat !important;
       background-color: #050608 !important;
+
+      overflow: hidden;
 
     }
 
     #eRgf {
       max-width: unset !important;
+      margin-top: 0px !important;
+    }
+
+    #HeRe{
+      margin-top:17rem !important;
     }
 
     .wall-heading {
@@ -343,41 +508,47 @@
 
     #HeRe {
       position: relative;
-      top: -28px;
+      /* top: -28px; */
+    }
+
+    #HeRe {
+      position: relative;
+      /* top: -28px; */
     }
   }
 </style>
 
-<body style="overflow-x: hidden;">
+<body style="">
   <script>
-    $(document).ready(function(){
+    alert("w=" + window.innerWidth + " h=" + window.innerHeight);
+    $(document).ready(function () {
       // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
+      $("a").on('click', function (event) {
+
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
           // Prevent default anchor click behavior
           event.preventDefault();
-    
+
           // Store hash
           var hash = this.hash;
-    
+
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
+          }, 800, function () {
+
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
         } // End if
       });
     });
-    
-    
-    
-    </script>
+
+
+
+  </script>
   <nav style="opacity: 1;">
     <a href="https://www.ecellnitb.com" style="
         display: flex;
@@ -392,7 +563,7 @@
       <li class="nav-link"><a onclick="closeNav()" href="#event-section">events</a></li>
       <li class="nav-link"><a onclick="closeNav()" href="#speakers">speakers</a></li>
       <li class="nav-link"><a onclick="closeNav()" href="#schedule">schedule</a></li>
-      <!-- <li class="nav-link"><a onclick="closeNav()" href="#">why attend?</a></li> -->
+      <li class="nav-link"><a onclick="closeNav()" href="#">why attend?</a></li>
       <!-- <li class="nav-link"><a href="./faq/">faqs</a></li> -->
 
     </ul>
@@ -403,7 +574,7 @@
     </div>
   </nav>
   <section
-    style="background: url(./earth.png);height:100vh;display: flex;align-content: center;align-items: center;justify-content: center;background-size: contain;background-position-x: right;background-repeat: no-repeat;background-color: #050608;"
+    style="background: url(./earth.png);height:100vh;display: flex;justify-content: center;background-size: contain;background-position-x: right;background-repeat: no-repeat;background-color: #050608;align-items: center ;"
     id="first-section">
     <div id="HeRe" style="
 /* background: blue; */
@@ -525,8 +696,8 @@ color: #E8E8E8;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
-            font-size: 45px;
-            line-height: 54px;
+            font-size: 2.8125rem;
+            line-height: 3.375rem;
             letter-spacing: 0.03em;
             color: #E8E8E8;
             ">
@@ -643,6 +814,47 @@ color: #E8E8E8;
       </div>
     </div>
   </section>
+  <script src="./jquery-3.2.1.min.js"></script>
+  <script src="./jquery.easeScroll.js"></script>
+  <script src="./rellax.min.js"></script>
+  
+  <script>
+    var limit = 500;
+    space = document.getElementById("event-section");
+  
+    stars = {
+      rand: function () {
+        return Math.random();
+      },
+  
+      createStar: function () {
+        let star = document.createElement("div");
+        star.className = "star rellax";
+  
+        return star;
+      },
+  
+      create: function () {
+        for (let i = 0; i <= limit; i++) {
+          let star = this.createStar();
+          star.style.top = `${(this.rand()) * 100}vh`;
+          star.style.left = `${this.rand() * document.body.getClientRects()[0].width}px`;
+          star.setAttribute("data-rellax-speed", `${Math.trunc(this.rand() * -30)}`);
+          star.style.width = `${(this.rand() + 0.1) * 2}px`;
+          star.style.height = `${(this.rand() + 0.1) * 2}px`;
+          // star.style.animationDelay = `${this.rand() * 8}s`;
+          space.appendChild(star);
+          console.log(i);
+        }
+      }
+    };
+  
+    stars.create();
+  
+  </script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
   <section id="speakers">
     <h3 class="spk-heading">Speakers</h3>
     <h1 class="spk-sub-heading">Our Past Speakers</h1>
@@ -1988,6 +2200,13 @@ color: #E8E8E8;
   </div>
   </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
   <!-- nav script starts here -->
   <script>
     const navSlide = () => {
@@ -2190,7 +2409,7 @@ color: #E8E8E8;
 
     }
   </script>
-  <script src="./wow.min.js"></script>
+  <!-- <script src="./wow.min.js"></script>
   
   <script>
 
@@ -2202,7 +2421,7 @@ color: #E8E8E8;
     });
     wow.init();
 
-  </script>
+  </script> -->
   </body>
   <script>
     // navbar shrink script starts here
@@ -2308,10 +2527,7 @@ color: #E8E8E8;
       });
     });
   </script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+
   
   
   
