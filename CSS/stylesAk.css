@@ -1087,6 +1087,11 @@ margin-bottom: 0;
 }
 }
 @media screen and (max-width:449.9px){
+    .carousel__slide div {
+        position: relative;
+        width: 50%;
+        margin: auto;
+    }
     .fa-angle-down{
         top: 1px;
     }
