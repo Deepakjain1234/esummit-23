@@ -242,6 +242,8 @@ height: 3px;
 
 #sponsor {
   background: url('pexels-adrien-olichon-2387793\ 1.png');
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
 }
 .spo-head{
@@ -412,9 +414,10 @@ input:focus, textarea:focus, select:focus{
 
 #events{
   height: 123vh;
-background: rgba(5, 5, 6, 0.5);
-  background-image: url(../schedule.png);
+
+  background-image: url(./schedule.png) !important;
   background-size: cover;
+  text-align: center;
 }
 .mevents{
   height: 123vh;
@@ -439,14 +442,13 @@ background: rgba(5, 5, 6, 0.5);
   line-height: 54px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 8rem;
-  margin-left: 8vw;
+  padding-top: 8rem;
+ 
   color: #E8E8E8;
 }
 .head{
  padding-top: 10px;
-padding-left: 300px;
-margin-left:19vw;
+
 margin-bottom: 70px;
 }
 #location {
