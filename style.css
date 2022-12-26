@@ -322,8 +322,24 @@ font-family: 'Inter';
   justify-content: center;
   transition:0.4s;
 }
-
+.sponsorItem1 {
+  position: relative;
+  width: 150px;
+  height: 90px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px;
+  border: solid 1px #b9b5b570;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.4s;
+}
 .sponsorItem:hover{
+  transform: translate(0px, -7px) !important;
+}
+.sponsorItem1:hover {
   transform: translate(0px, -7px) !important;
 }
 .sponsorItem img{
@@ -331,6 +347,12 @@ font-family: 'Inter';
   width: 115px;
 scale:0.72;
   filter: contrast(2.45) ;
+}
+.sponsorItem1 img {
+  height: auto;
+  width: 115px;
+  scale: 0.72;
+  filter: contrast(2.45);
 }
 .h2{
 
@@ -1617,43 +1639,33 @@ display: flex;
           transition: 0.4s;
  
         }
+                .sponsorItem1 {
+                  position: relative;
+                  width: 150px;
+                  height: 90px;
+                  background-color: white;
+                  border-radius: 5px;
+                  margin: 8px;
+                  border: solid 1px #b9b5b570;
+                  display: flex;
+                  align-content: center;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  transition: 0.4s;
+        
+                }
                 .sponsorItem img {
           width:115px;
           height:auto;
       transform:scale(0.65)
 
                 }
-        .mob-img
-        {
-position: relative;
-  width: 150px;
-  height: 90px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 8px;
-  border: solid 1px #b9b5b570;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  transition: 0.4s;
-  scale: 0.85;
-        }
-                 .mob-img1 {
-                   position: relative;
-                   width: 150px;
-                   height: 90px;
-                   background-color: white;
-                   border-radius: 5px;
-                   margin: 8px;
-                   border: solid 1px #b9b5b570;
-                   display: flex;
-                   align-content: center;
-                   flex-wrap: wrap;
-                   justify-content: center;
-                   transition: 0.4s;
-                   scale: 0.85;
-                 }
+                                .sponsorItem1 img {
+                                  width: 115px;
+                                    height: auto;
+                                  transform: scale(0.6)
+                                }
+    
     .pg{
       margin-top:1vh;
     }
