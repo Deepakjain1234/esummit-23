@@ -1527,6 +1527,21 @@ display: flex;
       line-height: 145px !important;
       left: 33px !important;
   }
+    .sponsorItem img {
+      position: relative;
+      width: 150px;
+      height: 90px;
+      background-color: white;
+      border-radius: 5px;
+      margin: 8px;
+      border: solid 1px #b9b5b570;
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      transition: 0.4s;
+      scale:0.65;
+    }
   .manit-head{
     font-size: 37px !important;
     left: 33px !important;
@@ -1587,6 +1602,52 @@ display: flex;
     .events-image{
       margin: 0px;
     }
+        .sponsorItem {
+          position: relative;
+          width: 150px;
+          height: 90px;
+          background-color: white;
+          border-radius: 5px;
+          margin: 8px;
+          border: solid 1px #b9b5b570;
+          display: flex;
+          align-content: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          transition: 0.4s;
+          scale: 0.85;
+        }
+        .mob-img
+        {
+position: relative;
+  width: 150px;
+  height: 90px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px;
+  border: solid 1px #b9b5b570;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.4s;
+  scale: 0.85;
+        }
+                 .mob-img1 {
+                   position: relative;
+                   width: 150px;
+                   height: 90px;
+                   background-color: white;
+                   border-radius: 5px;
+                   margin: 8px;
+                   border: solid 1px #b9b5b570;
+                   display: flex;
+                   align-content: center;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                   transition: 0.4s;
+                   scale: 0.85;
+                 }
     .pg{
       margin-top:1vh;
     }
@@ -1978,6 +2039,7 @@ display: flex;
        justify-content: space-around;
        align-items: center;
        width: 100vw;
+       margin-left: -5vw;
      }
     #location {
       width: 100%;
