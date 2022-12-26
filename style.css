@@ -251,18 +251,19 @@ height: 3px;
   display:flex;
 }
 #sponsor {
-  background: url('pexels-adrien-olichon-2387793\ 1.png');
+  background: url('./pexels-adrien-olichon-2387793\ 1.png');
   width: 100%;
   background-attachment: fixed;
-    background-size: cover;
+  background-size: cover;
+  
 }
 .spo-head{
   font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size:45px;
+    font-size:65px;
     line-height: 79px;
-    margin-top:0.01rem;
+    padding-bottom: 60px;
     margin-bottom:3vh;
     /* identical to box height */
     letter-spacing: 0.03em;
@@ -277,7 +278,7 @@ font-family: 'Inter';
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 100px;
-  padding-bottom: 1px;
+  
 }
 .comment{
   position:relative;
@@ -450,19 +451,19 @@ input:focus, textarea:focus, select:focus{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 54px;
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 8rem;
-  margin-left: 8vw;
+  
   color: #E8E8E8;
 }
 .head{
- padding-top: 10px;
-padding-left: 300px;
-margin-left:19vw;
-margin-bottom: 70px;
+ font-size: 65px;
+ line-height: 79px;
+font-weight: 800;
+margin-bottom: 85px;
 }
 #location {
   width: 100%;
@@ -1630,16 +1631,20 @@ display: flex;
       display: flex;
       justify-content: center;
     }
+    .eve{
+      font-size: 25px;
+      padding-top: 60px;
+    }
     .head {
      
       font-family: "Raleway";
       font-style: normal;
-      font-weight: 700;
-      font-size: 35px;
-      line-height: 53px;
-      margin-top:5rem;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+
       margin-bottom: 40px;
-      margin-left:2vw;
+     padding-top: 0;
    
     }
     .sub3{
@@ -1660,20 +1665,21 @@ display: flex;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 600;
-          font-size: 20px;
-          line-height: 45px;
+          font-size: 25px;
+          line-height: 54px;
           margin-top: 3vh;
           text-align: center;
           letter-spacing: 0.03em;
           color: #E8E8E8;
           padding-top: 15px;
           margin: 0px;
-          margin-right:4px;
+          
         }
         .heads {
           display: flex;
           text-align: center;
           justify-content: center;
+          flex-direction: column;
           width: 100vw;
           padding-top: 5vh;
         }
@@ -1682,13 +1688,13 @@ display: flex;
       font-family: 'Inter';
       font-style: normal;
       font-weight: 700;
-      font-size: 20px;
-      padding-top: 15px;
-      line-height: 45px;
-      margin-top: 3vh;
+      font-size: 30px;
+     padding-top: 0;
+      line-height: 30px;
+      
       
     margin:0px;
-    margin-left:4px;
+    
       text-align: center;
       letter-spacing: 0.03em;
   
@@ -1857,11 +1863,16 @@ display: flex;
        scale: 0.85;
      }
     .sponsor-head{
-      font-size:32px;
+      font-size:25px;
+      padding-top: 60px;
+      padding-bottom: 0;
     }
   .spo-head{
     font-size:30px;
+    line-height: 30px;
    justify-content: center;
+   margin-bottom: 40px;
+   padding-bottom: 10px;
   }
   .comment{
     font-size:15px;
@@ -1870,6 +1881,16 @@ display: flex;
   }
     .box {
       border: none;
+	      
+          width: 100vw;
+          height: auto;
+          display: flex;
+          padding-bottom: 50px;
+          flex-direction: column;
+          background: url(./past\ events\ bg.png);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center center;
     }
 
     .footer-tab {
@@ -1898,11 +1919,7 @@ display: flex;
           background-position: center center;
           background-attachment: fixed;
         }
-    #sponsor {
-      background: url(pexels-adrien-olichon-2387793\ 1.png);
-      width: 100vw;
-      height: auto;
-    }
+   
      #events-sub {
        display: flex;
        flex-direction: row;
@@ -1910,7 +1927,7 @@ display: flex;
        align-content: center;
        justify-content: space-around;
        align-items: center;
-       width: 105vw;
+       width: 100vw;
      }
     #location {
       width: 100%;
