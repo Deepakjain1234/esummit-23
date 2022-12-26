@@ -1615,11 +1615,12 @@ display: flex;
           flex-wrap: wrap;
           justify-content: center;
           transition: 0.4s;
-          scale: 0.85;
+ 
         }
                 .sponsorItem img {
-                 padding:20px;
-                 scale:0.55;
+          width:115px;
+          height:auto;
+      transform:scale(0.8)
 
                 }
         .mob-img
@@ -2327,7 +2328,7 @@ position: relative;
   /* align-items: center; */
   width: 70vw;
   margin-top: 2vh;
-  margin-left: vw;
+  margin-right: 16px;
 }
  .subscribe-text {
    margin-top: 3vh;
