@@ -1695,7 +1695,7 @@ display: flex;
         .peoplesay {
           width: 100vw;
           height: auto;
-          background: url(../images/executives-joking-laughing-office3\ 1.png);
+          background: url(../images/ANdroid.png);
           overflow:hidden;
         }
     .writeup {
@@ -1924,7 +1924,8 @@ display: flex;
       margin-top: 8vh;
   
       margin-right: 1px;
-      background: #959595;
+      background: #000000;
+      opacity:0.7;
       border-radius: 0.721429px;
     }
   
@@ -1935,7 +1936,7 @@ display: flex;
        font-size:10px;
        line-height: 13px;
        letter-spacing: 0.03em;
-       padding:40px;
+       padding:29px;
        color: #FFFFFF;
        display: block;
      }
@@ -2349,7 +2350,7 @@ display: flex;
   margin-right: 16px;
 }
  .subscribe-text {
-   margin-top: 3vh;
+      margin-top: -3vh;
    margin-left: 1vw;
    font-size: 15px;
    overflow: hidden;
