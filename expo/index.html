@@ -1,0 +1,1322 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start-Up Expo</title>
+  <!-- <link rel="stylesheet" href="mobile.css" /> -->
+  <link rel="stylesheet" href=".assets/css/style3.css">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
+  <link rel="icon" href="favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+
+  <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./assets/css/animate.css">
+ 
+  <style>
+    .itbdiv {
+      width: 24.5rem;
+      height: 25rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      font-size: inherit;
+    }
+
+    .itbdiv>img {
+      height: 7.0625rem;
+    }
+
+    .parent {
+      display: flex;
+      color: rgba(232, 232, 232, 1);
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .itbhead {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6303rem;
+      line-height: 2rem;
+      letter-spacing: 0.03rem;
+      margin-top: 33px;
+      margin-bottom: 18px;
+      color: #E8E8E8;
+    }
+
+    .itbdesc {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.0625rem;
+      line-height: 1.625rem;
+      width: 19.9375rem;
+      text-align: justify;
+      letter-spacing: 0.05rem;
+      color: #E8E8E8;
+      word-spacing: -2px;
+      word-break: break-all;
+    }
+
+    .circleGauge {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 8px;
+      stroke-dasharray: 29.5rem;
+      stroke-dashoffset: 29.5rem;
+      animation: anim 2s linear forwards;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: rotate(-90deg);
+    }
+
+    .circleFull {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 2px;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: rotate(-90deg);
+    }
+
+
+    @keyframes anim {
+      100% {
+        stroke-dashoffset: 14.75rem;
+      }
+    }
+
+    .timerDigits {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 3.2934rem;
+      line-height: 4rem;
+
+      letter-spacing: 0.03rem;
+
+      fill: #FFFFFF;
+
+    }
+
+    .timerCaptions {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.375rem;
+      line-height: 1.6875rem;
+
+      letter-spacing: 0.03rem;
+
+      fill: #E8E8E8;
+    }
+    @media (max-width: 1400px) {
+
+html {
+  font-size: 13.7px;
+}
+
+
+}
+    @media (max-width: 1300px) {
+
+      html {
+        font-size: 13px;
+      }
+
+      .parent {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+
+      html {
+        font-size: 12px;
+      }
+
+      .parent {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+
+      html {
+        font-size: 10px;
+
+      }
+
+      .parent {
+        font-size: 8px;
+      }
+
+    }
+
+
+
+    @media (max-width: 900px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 9px !important;
+      }
+
+
+    }
+    @media (max-width: 800px) {
+
+/* footer causing overflow making menu burger icon outside viewport; */
+html {
+  font-size: 7px !important;
+}
+
+
+}
+@media (max-width: 700px) {
+
+/* footer causing overflow making menu burger icon outside viewport; */
+html {
+  font-size: 6px !important;
+}
+
+
+}
+@media (max-width: 600px) {
+
+/* footer causing overflow making menu burger icon outside viewport; */
+html {
+  font-size: 5px !important;
+}
+
+
+}
+@media (max-width: 500px) {
+
+/* footer causing overflow making menu burger icon outside viewport; */
+html {
+  font-size: 4px !important;
+}
+
+
+}
+
+    @media (max-width: 400px) {
+
+      html {
+        font-size: 7px !important;
+
+      }
+
+      #HeRe {
+        margin-top: 25rem;
+      }
+
+      .parent {
+        font-size: 11.9px;
+      }
+
+      .itbhead {
+        margin-top: unset;
+        margin-bottom: unset;
+      }
+
+      .burger div {
+        width: 4.5625rem;
+        height: 0.475rem;
+        /* background-color: #EA8A01; */
+        background-color: white;
+        margin: 0.8125rem;
+        /* border-radius: 3px; */
+        transition-duration: 500ms;
+      }
+
+      .burger {
+        display: block;
+        position: fixed;
+        right: -1rem;
+        top: 1.3rem;
+        margin-right: 0.625rem;
+        z-index: 1001;
+        transform: scale(0.7);
+      }
+
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-2.0625rem, 1.75rem) !important;
+      }
+
+      nav {
+        background: rgba(4, 7, 13, 0.85) !important;
+        padding: 10px 20px;
+      }
+
+      #first-section {
+        height: calc(100vh - 7rem) !important;
+        text-align: center;
+        background: url(./assets/images/other/lpg.png) !important;
+        /* height: 100vh !important; */
+        display: flex !important;
+        align-content: center !important;
+        justify-content: center !important;
+        background-size: cover !important;
+        /* background-position-y: -5rem !important; */
+        background-repeat: no-repeat !important;
+        background-color: #050608 !important;
+        overflow: hidden;
+
+      }
+
+      #eRgf {
+        max-width: unset !important;
+        margin-top: 0px !important;
+      }
+
+      #HeRe {
+        margin-top: 17rem !important;
+      }
+
+
+      .tagline {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8.01937px !important;
+        line-height: 10px !important;
+        text-align: center;
+        letter-spacing: 0.03em !important;
+        /* padding: 0px 41px; */
+      }
+
+      .social-bigs {
+        display: none;
+        position: unset;
+        /* z-index: 1000; */
+        /* display: flex !important; */
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center !important;
+        /* right: 50px; */
+        /* bottom: 50px; */
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        font-size: 2em !important;
+        /* top: 9em !important; */
+        align-content: center;
+        padding-top: 0.8125rem;
+      }
+
+      .social-bigs::before {
+        display: none;
+      }
+
+      .itbdesc {
+        text-align: justify;
+      }
+
+      .nav-link {
+        font-size: 2.5rem;
+      }
+
+      #logo {
+        /* height: 5.875rem; */
+        width: 15.875em;
+        margin: unset;
+        margin-top: 2em;
+        transition: 0.4s;
+      }
+
+      #HeRe {
+        position: relative;
+        /* top: -28px; */
+      }
+
+      #HeRe {
+        position: relative;
+        /* top: -28px; */
+      }
+
+      .wall-heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800 !important;
+        font-size: 32.936px !important;
+        line-height: 40px !important;
+        letter-spacing: 0.15em !important;
+        text-align: left !important;
+        width: auto !important;
+        color: #E8E8E8;
+      }
+
+      .sub-heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 47.5984px !important;
+        line-height: 58px !important;
+        letter-spacing: 0.07em !important;
+        width: auto !important;
+        color: #00D1FF;
+        text-align: left !important;
+
+      }
+
+      #HeRe {
+        width: auto !important;
+      }
+
+      .tagline {
+        padding: 0px !important;
+      }
+
+      #HeRe {
+        margin-top: 29rem !important;
+      }
+
+      .burger {
+        margin-top: 1.5rem !important
+      }
+      .sch{
+        height:28.0625rem !important;
+      }
+    }
+  </style>
+</head>
+
+
+<body style="width:100vw;">
+  <script>
+    // alert("w=" + window.innerWidth + " h=" + window.innerHeight);
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+
+
+  </script>
+  <nav style="opacity: 1; height: 7rem;">
+    <a href="https://www.ecellnitb.com" style="
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    "><img id="logo" src="./assets/images/other/logo.png" style="width: 10.875em;margin-left: 2.9375em !important;"></a>
+
+    <ul class="nav nav-items" style="text-transform: uppercase;">
+      <li class="nav-link"><a onclick="closeNav()" href="#first-section">Home</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#about">about us</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#gallery">Gallery</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#register">Register</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#sponsor">Sponsors</a></li>
+      <!-- <li class="nav-link"><a href="./faq/">faqs</a></li> -->
+
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <section
+    style="background: url(./assets/images/other/landing.png);height:100vh;display: flex;justify-content: center;background-size: contain;/* background-position-x: right; */background-repeat: no-repeat;background-color: #050608;align-items: center;"
+    id="first-section">
+    <div id="HeRe" style="/* background: blue; */width: 69.75rem;">
+      <div id="eRgf" style="max-width: 51rem;margin-top: 5.0625rem;">
+        <div class="wall-heading"
+          style="color: rgb(232, 232, 232); opacity: 1; font-family: Montserrat; font-style: normal; font-weight: 800; font-size: 4.9942rem; line-height: 6.0625rem; letter-spacing: 0.15rem; height: 5.4588rem;">
+          START-UP
+        </div>
+        <div class="sub-heading"
+          style="color: rgb(0, 209, 255); opacity: 1; font-family: Montserrat; font-style: normal; font-weight: 600; font-size: 5.9735rem; line-height: 7.3125rem; letter-spacing: 0.07rem; width: 18.6994rem; height: 6.46rem;">
+          EXPO
+        </div>
+        <div class="tagline"
+          style="font-family: Inter; font-style: normal; font-weight: 500; font-size: 1.25rem; line-height: 1.5rem; letter-spacing: 0.03rem; margin-top: 2.1875rem; color: rgb(232, 232, 232); opacity: 1;">
+          <div style="
+          width: 34.1669rem;
+          height: 7.5rem;
+     
+          
+          /* gradient */
+          background: linear-gradient(185.1deg, rgba(0, 209, 255, 0.9) 3.44%, rgba(0, 240, 255, 0.9) 95.27%);
+          border-radius: 0.7353rem;
+          width: 31.7462rem;
+          height: 6.9688rem;
+          
+          ">
+            <style>
+              .timerbox>div {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                border-right: 0.1812rem solid #F5F5F5;
+                justify-content: center;
+                flex-grow: 1;
+                height: 50%;
+                flex-direction: column;
+                text-align: center;
+              }
+
+              .val {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.2424rem;
+                line-height: 2.75rem;
+                letter-spacing: 0.07em;
+
+                color: #F5F5F5;
+              }
+
+              .sub {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.3359rem;
+                line-height: 1.625rem;
+                letter-spacing: 0.07em;
+
+                color: #F5F5F5;
+              }
+            </style>
+            <div class="timerbox" style="
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 100%;
+    
+    align-items: center;
+">
+              <div>
+                <div class="val" id="days">00</div>
+                <div class="sub">Days</div>
+              </div>
+              <div>
+                <div class="val" id="hrs">00</div>
+                <div class="sub">Hrs</div>
+              </div>
+
+              <div>
+                <div class="val" id="mins">00</div>
+                <div class="sub">Mins</div>
+              </div>
+
+              <div style="border-right:0px;">
+                <div class="val" id="secs">00</div>
+                <div class="sub">Secs</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="social social-bigs social-bigs-mbl" style="opacity: 1;">
+          <a href="https://twitter.com/ecell_nitb" class="animate__animated animate__fadeInUp animate__delay-1s"
+            target="_blank"><i class="fab fa-twitter" style="/* color: white;     */ " aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/ecellnitbhopal/"
+            class="animate__animated animate__fadeInUp animate__delay-2s" target="_blank"><i
+              class="fa-brands fa-square-facebook" style="/* color: white; */ "></i></a>
+          <a href="https://www.instagram.com/ecell_nitb/" class="animate__animated animate__fadeInUp animate__delay-3s"
+            target="_blank"><i class="fab fa-instagram" style="/* color: white;     */ " aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/ecell-manit"
+            class="animate__animated animate__fadeInUp animate__delay-4s" target="_blank"><i
+              class="fa-brands fa-linkedin" style="/* color: white;     */ "></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var s = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = d;
+      document.getElementById("hrs").innerHTML = h;
+      document.getElementById("mins").innerHTML = m;
+      document.getElementById("secs").innerHTML = s;
+ 
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+      }
+    }, 1000);
+  </script>
+  <section style="
+    padding:6.9375rem 0rem 9.25rem 8.9375rem;
+    background-color: #F6F6F6;
+  " id="second-section">
+    <div class="secHead" id="about" style="margin-top:0rem;">About</div>
+    <div class="secDesc one">
+      Startup Expo provides a platform to the most innovative and disruptive startups from all over the country to
+      interact with thousands of its potential customers and investors. We provide an opportunity for the attendees to
+      learn about the new entrepreneurial techniques. In Startup Expo, there will be a presentation by the startups
+      where they will describe their product in detail and its potential impact. We'll also be bringing C-Level
+      executives from top corporations, government agencies, incubators, investors, VC funds, banks and tech companies
+      at a single platform.
+    </div>
+    <div class="secHead bulletHead">Eligibility</div>
+    <div class="secDesc two">
+      • Startups should be registered, with their active websites. <br>
+      • Startups should be bootstraped or Seed funded or incubation/pre-incubation stage. <br>
+      • Startups should be actively generating revenue for 1-2 years. <br>
+    </div>
+
+    <div class="secHead bulletHead">Rules and Regulation</div>
+    <div class="secDesc three">
+      • Registration Procedure: <br>
+      <div style="
+  margin-left: 1.75rem;
+">
+
+
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">a. </div>
+          <div>Last date to register:05/02/2022</div>
+        </div>
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">b. </div>
+          <div>After the reviewing and selection process, selected startups will be notified through email and call.
+          </div>
+        </div>
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">c. </div>
+          <div>After selection, startups are required to send a confirmation mail to E-Summit MANIT Bhopal at
+            esummit@ecellnitb.com to confirm their participation. </div>
+        </div>
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">d. </div>
+          <div>A unique slot no. will be allotted to all the selected startups, along with a point of contact from the
+            E-Summit team.</div>
+        </div>
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">e. </div>
+          <div>Startups must pay a minimal registration fee of INR 2500 and booth allocation fee of INR 7500 to E-Summit
+            MANIT within three days of confirmation. The information regarding the same will be conveyed through mail.
+          </div>
+        </div>
+      </div>
+      <br>
+
+      • Screening Process: <br>
+      <div style="
+  margin-left: 1.75rem;
+">
+
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 0.9375rem;">a. </div>
+          <div>Pitching will be done in front of investors, followed by their visit to individual booths, where they may
+            interact if the startup idea generates interest in them.</div>
+        </div>
+        <div style="
+display: flex;
+">
+          <div style="margin-right: 15px;">b. </div>
+          <div>A Judging panel composed of investors, mentors, and a few members of E-Cell NIT-B's partners will give
+            points to the startups upon their pitching, according to which they will be given cash prizes or credits.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mdetail" style="width: 100%;
+height: 37.3125rem;
+
+background: rgba(236, 236, 236, 0.9);">
+    <div style="
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+" class="submdet">
+      <div style="width:50%;padding: 8.25rem 0rem 10.125rem 9.625rem;box-sizing: border-box;" class="eiwfj">
+        <div class="secHead feiwf" style="margin-top:0rem;max-width: 30rem;">Details of last year Expo</div>
+        <div class="secDesc feewe" style="width:unset;">
+          Startup Expo provides a platform to the most innovative and disruptive startups from all over the country to
+          interact with thousands of its potential customers and investors. We provide an opportunity for the attendees
+          to learn about the new entrepreneurial techniques.
+        </div>
+
+      </div>
+      <div class="eiwo"
+        style="width:50%;display: flex;justify-content: center;align-items: flex-end;align-content: flex-end;">
+        <img src="./assets/images/other/sch.png" class="sch" style="
+        height: 41.0625rem;
+        width: auto;
+    " alt="">
+      </div>
+    </div>
+  </section>
+  <section id="gallery"
+    style="width: 100vw;min-height: 35.9375rem;padding: 5.8125rem 2.75rem;box-sizing: border-box;background: #FBFBFB;overflow: hidden;">
+    <div class="secHead evg" style="margin-top:0rem;padding:0rem 3.875rem;">Event Gallery</div>
+    <style>
+      #slider li {
+
+        display: inline-block;
+        width: 19.6687rem;
+        height: 15.1206rem;
+        margin: 0rem 1.6538rem 0rem 0rem;
+
+        background: #D9D9D9;
+
+      }
+    </style>
+    <div class="sh"
+      style="width: 100%;display: flex;align-content: center;align-items: center;justify-content: space-around;">
+      <div class="eventnav"><i class="fa-solid fa-chevron-left" onclick='
+        gsap.to("#sliderparent", {duration: 1, scrollTo: {x: document.querySelector("#sliderparent").scrollLeft - 150}})
+       '></i></div>
+      <div class="sh erwef" id="sliderparent" style="
+      width: 80vw;
+      overflow: scroll;
+
+  ">
+
+        <ul id="slider" style="padding: 0;margin: 0;width:calc((20 * 19.6687rem));">
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="eventnav"><i class="fa-solid fa-chevron-right" onclick='
+        gsap.to("#sliderparent", {duration: 1, scrollTo: {x: document.querySelector("#sliderparent").scrollLeft + 150}})
+       '></i></div>
+      <script>
+        let delta = 150;
+        setInterval(function () {
+          let x = document.querySelector("#sliderparent").scrollLeft;
+
+          gsap.to("#sliderparent", { duration: 1, scrollTo: { x: document.querySelector("#sliderparent").scrollLeft + delta }, autoKill: true });
+          setTimeout(() => {
+            if (x == document.querySelector("#sliderparent").scrollLeft) {
+              delta *= -1;
+            }
+          }, 1500)
+
+        }, 2000);
+      </script>
+    </div>
+
+    <style>
+      .bullet>div {
+        display: inline-block;
+        background: #b9b9b9;
+        border-radius: 50%;
+        width: 0.625rem;
+        height: 0.625rem;
+        cursor: pointer;
+      }
+
+      .eventnav {
+        font-size: 1.5625rem;
+        cursor: pointer;
+        color: #444;
+        display: flex;
+        /* display: block; */
+        height: 15.1206rem;
+        align-items: center;
+        s
+      }
+    </style>
+  </section>
+  <section id="register" class="effe"
+    style="background:#F6F6F6;width: 100%;min-height: 56rem;padding-top: 7.3125rem;padding-right: 10.1875rem;background-size: 29.5rem 35.1875rem;padding-bottom: 6.2188rem;box-sizing: border-box;">
+    <div class="efe">
+      <img src="./assets/images/other/man.png" style="
+      height: 35.1875rem;
+      width: auto;
+  " class="efee" alt="">
+    </div>
+    <div style="
+  float: right;
+  /* height: 100%; */
+  width: 44.375rem;
+" class="evd">
+      <style>
+        .form>div,
+        .form>div>.fhi {
+          width: 43.875rem;
+          height: 3.5625rem;
+          margin-bottom: 0.8125rem;
+          border: 0.1rem solid #00D1FF;
+          border-radius: 0.7042rem;
+          display: flex;
+          align-content: center;
+          align-items: center;
+        }
+
+        .fhi {
+          /* margin: 0 !important; */
+        }
+
+        .form>div>div,
+        .form>div>div>div {
+          width: 4.4375rem;
+          height: 100%;
+          /* background-color: red; */
+          /* padding: 15px 0px; */
+          display: inline-block;
+          display: flex;
+          box-sizing: border-box;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .form>div>input,
+        .form>div>div>input {
+          background: none;
+          border: none;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 1.0709rem;
+          line-height: 1.3125rem;
+          color: #9F9F9F;
+          outline: none;
+          width: 100%;
+          height: 100%;
+        }
+        .form>div>div>img,
+        .fhi>div>img{
+        width: 1.25rem;
+        }
+      </style>
+      <div style="font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 2.8125rem;
+line-height: 3.375rem;
+letter-spacing: 0.03rem;
+color: #000000;margin-top:0rem;margin-bottom:3.375rem;" class="vce">Register Now For Startup Expo</div>
+      <div class="form">
+        <div>
+          <div>
+            <img src="./assets/images/other/4.png" alt="">
+          </div>
+          <input type="text" required placeholder="Name">
+        </div>
+
+        <div>
+          <div>
+            <img src="./assets/images/other/2.png" alt="">
+          </div>
+          <input type="text" required placeholder="E-Mail">
+        </div>
+
+        <div>
+          <div>
+            <img src="./assets/images/other/1.png" alt="">
+          </div>
+          <input type="text" required placeholder="Whatsapp number">
+        </div>
+
+        <div style="border:none;
+        justify-content: space-between;">
+        
+                  <div class="fhi vjek" style="    margin-right: 0.625rem; /* width: 24.4625rem; */display: flex;align-content: center;align-items: center;justify-content: flex-start;margin-bottom: 0;flex-grow: 1;">
+                    <div>
+                      <img src="./assets/images/other/5.png" alt="">
+                    </div>
+                    <input type="text" required="" placeholder="College">
+                  </div>
+        
+                  <div class="fhi kejv" style="flex-grow: 1;/* width: 300px; */margin-bottom: 0;">
+                    <div>
+                      <img src="./assets/images/other/5.png" alt="">
+                    </div>
+                    <input type="text" required="" placeholder="Year/Class">
+                  </div>
+        
+                </div>
+        <div>
+          <div>
+            <img src="./assets/images/other/5.png" alt="">
+          </div>
+          <input type="text" required placeholder="Branch/section">
+        </div>
+        <div>
+          <div>
+            <img src="./assets/images/other/3.png" alt="">
+          </div>
+          <input type="text" required placeholder="Referral Code (optional)">
+        </div>
+
+      </div>
+      <div style="margin-top:1.5625rem;margin-bottom:2.3125rem;">
+        <div style="font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.0709rem;
+  line-height: 1.3125rem;
+  /* identical to box height */
+  
+  
+  color: #656565;" class="eiow">
+          By Clicking on Submit you agree on our
+          <span>Terms and Conditions</span>
+        </div>
+
+
+      </div>
+      <button style="
+width: 7.6588rem;
+height: 2.9013rem;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 1.0027rem;
+line-height: 1.1875rem;
+text-align: center;
+letter-spacing: 0.03rem;
+
+color: #FFFFFF;
+
+background: #00D1FF;
+border-radius: 0.2321rem;
+border: none;
+cursor:pointer;
+">
+        Submit
+      </button>
+    </div>
+  </section>
+  <section id="sponsor" class="efeoo"
+  style="width: 100vw;/* min-height: 37.5625rem; */padding: 5.625rem 6.75rem;box-sizing: border-box;text-align: center;background: #EDEDED;display: flex;flex-direction: column;align-content: center;justify-content: center;">
+
+    <div style="font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    letter-spacing: 0.03rem;
+    text-align:center;
+    margin-bottom:3.5625rem;
+    display: inline-block;
+    color: #000000;">
+      <div>Meet our sponsors</div>
+    </div>
+
+    <!-- <div style="font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 2.8125rem;
+line-height: 3.375rem;
+letter-spacing: 0.03rem;
+text-align:center;
+margin-bottom:3.5625rem;
+color: #000000;">Meet our sponsors</div> -->
+    <style>
+      .thumbs div {
+        width: 11.8106rem;
+        height: 8.2212rem;
+        background: #FFFFFF;
+        border-radius: 0.579rem;
+        margin: 0.625rem;
+      }
+    </style>
+    <div class="thumbs"
+      style="display: flex;justify-content: center;/* align-content: space-between; */flex-direction: row;flex-wrap: wrap;align-items: center;">
+
+      
+      <div style="background-image: url(./assets/images/sponsors/1.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/2.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/3.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/4.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/5.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/6.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/7.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/8.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/9.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/10.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/11.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/12.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/13.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/14.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/15.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/16.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/17.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/18.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/19.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/20.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/21.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/22.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/23.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/24.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/25.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/26.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/27.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/28.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/29.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/30.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+      <div style="background-image: url(./assets/images/sponsors/31.png);background-size: 6.25rem;background-position: center center;background-repeat: no-repeat;"></div>
+
+    </div>
+  </section>
+  <section
+    style="width: 100%;min-height: 14.6875em;background: linear-gradient(167.43deg, rgba(0, 194, 255, 0.9) 10.59%, rgba(0, 240, 255, 0.9) 107.91%);backdrop-filter: blur(50px);padding: 0px 8.0625em;box-sizing: border-box;display: flex;"
+    class="footersubs">
+    <div style="
+      width: 100vw;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+      /* height: 100%; */
+  ">
+      <div style="
+      /* flex-grow: 1; */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.5em;
+      line-height: 3em;
+  /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.03em;
+  
+  /* black */
+      color: #02020A;
+      /* height: 100%; */
+      display: flex;
+      align-items: center;
+      align-content: center;
+  ">
+        Subscribe our News Letter
+      </div>
+      <div style="
+      /* flex-grow: 1; */
+  ">
+        <div
+          style="width: 42.0625em;/* height: 4em; */background: #F6F6F6;border-radius: 0.25em;padding:0.4375em;/* box-sizing: border-box; */display: flex;justify-content: flex-end;">
+          <div style="
+          flex-grow: 1;
+      "><input type="text" style="width: 100%;height: 100%;border: none;background: transparent;outline: none;padding: 0rem 1.25rem;font-size: 1.375rem;"></div>
+          
+          <button
+            style="/* float: right; */width: 8.25em;height: 3.125em;background: #00D1FF;border-radius: 0.25em;border: none;font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 1.0801em;line-height: 1.3125em;
+  /* identical to box height */text-align: center;letter-spacing: 0.03em;color: #FFFFFF;cursor:pointer;">Subscribe</button>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="cnii">
+    <div class="footer-tab" style="
+    background: black;
+">
+      <div style="
+              /* width: 45%; */
+              height: 100%;
+              margin-top: -2.125em;
+              flex-grow: 0.7;
+          " id="conDet">
+
+        <div class="foot-contact" style="font-family: 'Noto Sans';">
+          <div class="contact-head">
+            <h2 style="
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.875em;
+            line-height: 2.25em;
+            letter-spacing: 0.12em;
+            margin-top: 0em;
+            margin-bottom: .7em;
+            color: #00D1FF;
+            ">Contact Us</h2>
+          </div>
+          <div class="info-our">
+            <div class="info-our-body">
+              <i class="fas fa-phone-volume" aria-hidden="true">&nbsp;</i>
+              <a href="tel:+918989473997" style="color:#B5B5B6;">+91 7757877965</a>
+            </div>
+            <div class="info-our-body">
+              <i class="far fa-envelope" aria-hidden="true">&nbsp;</i>
+              <a href="mailto: support@ecellnitb.com" style="color:#B5B5B6;"> support@ecellnitb.com</a>
+            </div>
+            <div class="info-our-body">
+              <i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;</i>
+              <div style="
+                      display: inline-block;
+                      width: 22em;
+                      vertical-align: middle;
+                  " class="mact">Maulana Azad National Institute of Technology, Bhopal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="
+    /* flex-grow: 1; */
+    border-left: 0.0313em solid #CACACA;
+    padding-left: 5.25em;
+">
+        <label
+          style="font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        text-align: center;
+        letter-spacing: 0.12em;color: #00D1FF;margin-bottom: 1.5625em;position: relative;top: 0.5625em;display: inline-block;">Write
+          to us</label>
+        <form action="https://formspree.io/f/xzbwvlre" method="POST">
+          <div class="input-container">
+            <input type="text" required="" name="name" placeholder="Fullname">
+          </div>
+          <div class="input-container">
+            <input type="mail" required="" name="email" placeholder="Email">
+          </div>
+          <div class="input-container">
+            <textarea type="text" required="" name="messege" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- nav script starts here -->
+  <script>
+    const navSlide = () => {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-items');
+      const navLinks = document.querySelectorAll('.nav-link');
+      // Toggle Nav
+
+      burger.addEventListener('click', () => {
+        navLinks.forEach((link, index) => {
+          link.style.animationDelay = '0ms';
+        });
+        if (document.querySelector('.nav-items').classList.contains('nav-active')) {
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'CloseLinkFade 1s ease forwards';
+          });
+          setTimeout(() => {
+            nav.classList.toggle('nav-active');
+          }, 250);
+          document.getElementsByTagName("body")[0].setAttribute("style", "overflow-y:auto; margin: 0;padding: 0;overflow-x: hidden;scroll-behavior: smooth;background-color:Black;");
+        } else {
+          nav.classList.toggle('nav-active');
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'navLinkFade 1s ease forwards';
+            link.style.animationDelay = ((index + 1) * 300) + 'ms';
+          });
+          document.getElementsByTagName("body")[0].setAttribute("style", "overflow-y:hidden; margin: 0;padding: 0;overflow-x: hidden;scroll-behavior: smooth;background-color:Black;");
+        }
+
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+      });
+
+
+    }
+    navSlide();
+  </script>
+  <!-- nav script ends here -->
+  <script>
+    let bullets = document.getElementsByClassName("event-timeline");
+
+    Array.from(bullets).forEach(e => {
+      e.addEventListener("click", () => {
+        e.classList.toggle("active");
+      });
+    });
+
+    function changeTOBlack() {
+      document.querySelector(".btn-jan").classList.add("btn-feb-click");
+      document.querySelector(".btn-feb").classList.remove("btn-feb-click");
+      if (document.querySelector(".timeline").classList.contains("timeline-click")) {
+        document.querySelector(".timeline").classList.remove("timeline-click");
+        document.querySelector(".timeline2").classList.remove("timeline2-click");
+      }
+
+
+    }
+    function changeTOBlue() {
+      document.querySelector(".btn-feb").classList.add("btn-feb-click");
+      document.querySelector(".btn-jan").classList.add("btn-jan-click");
+      document.querySelector(".btn-jan").classList.remove("btn-feb-click");
+      if (!document.querySelector(".timeline2").classList.contains("timeline2-click")) {
+        document.querySelector(".timeline2").classList.add("timeline2-click");
+        document.querySelector(".timeline").classList.add("timeline-click");
+      }
+
+
+
+    }
+  </script>
+
+  <script>
+
+
+
+
+  </script>
+  <script>
+    // navbar shrink script starts here
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+
+
+      if (window.innerWidth > 1110) {
+        let nav = document.getElementsByTagName("nav")[0].style;
+        let logo = document.getElementById("logo").style;
+        let navItem = document.getElementsByClassName("nav")[0].style;
+
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          nav.height = "74px";
+          logo.width = "6.75rem";
+        } else {
+          nav.height = "112px";
+          logo.width = "10.875rem";
+        }
+      }
+
+
+
+      if (document.documentElement.scrollTop < 220) {
+        let progress = Math.trunc(document.documentElement.scrollTop) / 220;
+
+        document.getElementsByClassName("wall-heading")[0].style.opacity = (1 - (0.9 * progress));
+
+        document.getElementsByClassName("sub-heading")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("tagline")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("social")[0].style.opacity = (1 - (0.9 * (progress)));
+      }
+    }
+  // navbar shrink script ends here
+  </script>
+
+
+
+</body>
+
+</html>
