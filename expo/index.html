@@ -33,6 +33,7 @@
     <link rel="stylesheet"
         href="./assets/css/animate.css">
     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         .itbdiv {
             width: 24.5rem;
@@ -452,7 +453,7 @@
 
     </script>
     <nav style="opacity: 1; height: 7rem;">
-        <a href="https://www.ecellnitb.com"
+        <a href="../index.html"
             style="
         display: flex;
         flex-direction: column;
@@ -483,6 +484,17 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <script>
+        function closeNav() {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-items');
+      if (window.innerWidth < 1110) {
+        nav.classList.remove("nav-active");
+        burger.classList.remove('toggle');
+
+      }
+    }
+    </script>
     <section
         style="background: url(./assets/images/other/landing.png);height:100vh;display: flex;justify-content: center;background-size: contain;/* background-position-x: right; */background-repeat: no-repeat;background-color: #050608;align-items: center;"
         id="first-section">

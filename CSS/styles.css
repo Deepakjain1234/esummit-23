@@ -3,22 +3,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap');
 
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sh::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sh {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+#cfes:before{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+}
+
 /* nav css start here */
 
 li a {
-  transition: 0.4s;
+  transition: 100ms;
   text-decoration: none;
   color: White;
 }
 
 nav {
-  transition: 0.4s;
+  transition: 100ms;
 }
 
 #hrSlide {
@@ -28,15 +47,15 @@ nav {
   position: sticky;
   top: 3.75rem;
   opacity: 0;
-  transition: 0.4s;
+  transition: 100ms;
 }
 
 #logo {
-  transition: 0.4s;
+  transition: 100ms;
 }
 
 .nav-items {
-  transition: 0.4s;
+  transition: 100ms;
 }
 
 nav {
@@ -47,22 +66,22 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: right;
-  
-  height: 8.25rem;
+  font-size: 15px;
+  height: 4.95rem;
   background: rgba(4, 7, 13, 0.85);
   width: 100vw;
 }
 #logo {
   /* height: 5.875rem; */
-  width: 10.875rem;
-  margin: 1.1875rem 0rem 1.1875rem 3.125rem;
-  transition: 0.4s;
+  width: 6.5em;
+  margin: 1.1875em 0em 1.1875em 3.125em;
+  transition: 100ms;
 }
 .nav-items {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 0.375rem;
+  padding-right: 0.375em;
   /* margin-top: 2.8125rem; */
   align-items: center;
 }
@@ -79,10 +98,10 @@ nav {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.1875rem;
+  font-size: 1em;
+  line-height: 1.1875em;
 
-  padding-right: 3.75rem;
+  padding-right: 3.75em;
   color: #e8e8e8;
 }
 .nav-link:hover {
@@ -93,10 +112,10 @@ nav {
   cursor: pointer;
 }
 .burger div {
-  width: 1.5625rem;
-  height: 0.1875rem;
-  background-color: rgb(226, 226, 226);
-  margin: 0.3125rem;
+  width: 1.5625em;
+  height: 0.1875em;
+  background-color: #EA8A01;
+  margin: 0.3125em;
 }
 @media screen and (max-width: 1300px) {
   .nav-items {
@@ -106,13 +125,13 @@ nav {
 
 @media screen and (max-width: 1110px) {  
   .toggle .line1 {
-    transform: rotate(-45deg) translate(-1.0625rem, 0.75rem) !important;
+    transform: rotate(-45deg) translate(-1.0625em, 0.75em) !important;
   }
   .toggle .line2 {
     opacity: 0;
   }
   .toggle .line3 {
-    transform: rotate(45deg) translate(0.0625rem, 0.3rem) !important;
+    transform: rotate(45deg) translate(0.0625em, 0.3em) !important;
   }
   .container {
     transform: scale(0.79) !important;
@@ -136,16 +155,18 @@ nav {
   }
   #logo {
     margin:0 !important;
+    margin-left: 2.125rem !important;
     /* opacity: 0; */
   }
   .burger{
-    margin-right: 4.625rem !important;
-    margin-top: 2.2rem !important;
+    margin-right: 1.625em !important;
+    margin-top: 0.4em !important;
   }
   .nav-items {
+    margin:0 !important;
     position: fixed;
     z-index: 1000;
-    right: 0rem;
+    right: 0em;
     height: 100%;
     top: 0;
     background-color: #000000e3;
@@ -158,18 +179,18 @@ nav {
     transition: transform 0.5s ease-in;
     /* padding-right: 1.4375rem !important; */
     padding-top: 0;
-    margin-top: -1.3125rem;
+    /* margin-top: -1.3125em; */
   }
   .nav-link {
     opacity: 0;
-    margin-left: 3.375rem;
+    margin-left: 3.375em;
   }
   .burger {
     display: block;
     position: fixed;
-    right: 0rem;
-    top: 0.625rem;
-    margin-right: 0.625rem;
+    right: 0em;
+    top: 0.625em;
+    margin-right: 0.625em;
     z-index: 1001;
   }
 
@@ -179,7 +200,7 @@ nav {
 
 @media screen and (max-width: 400px) {  
   .toggle .line1{
-      transform:rotate(-45deg) translate(-2.0625rem, 1.75rem) !important;
+      transform:rotate(-45deg) translate(-2.0625em, 1.75em) !important;
   }
   #first-section{
     align-items: unset !important;
@@ -195,38 +216,38 @@ nav {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(3.125rem);
+    transform: translateX(3.125em);
   }
   to {
     opacity: 1;
-    transform: translateX(0rem);
+    transform: translateX(0em);
   }
 }
 @keyframes CloseLinkFade {
   from {
     opacity: 1;
-    transform: translateX(0rem);
+    transform: translateX(0em);
   }
   to {
     opacity: 0;
-    transform: translateX(3.125rem);
+    transform: translateX(3.125em);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-1.0625rem, 1.75rem);
+  transform: rotate(-45deg) translate(-1.0625em, 1.75em);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(0.0625rem, -0.75rem);
+  transform: rotate(45deg) translate(0.0625em, -0.75em);
 }
 /* nav css ends here  */
 
 .social-bigs {
   position: absolute;
-  /* z-index: 1000; */
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: center;
