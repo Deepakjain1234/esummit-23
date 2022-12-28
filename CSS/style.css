@@ -233,6 +233,7 @@ height: 3px;
 }
 .fleco{
   display:flex;
+
 }
 .sub1 {
   font-family: 'Inter';
@@ -242,12 +243,12 @@ height: 3px;
   line-height: 17px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding-left:5.4vw;
+  padding-left:5.5vw;
   display:flex;
   margin-bottom:2vh
 }
 .ayu-img img{
-  height:50px;
+  height:45px;
   width:50px;
   border-radius:50%;
   display:flex;
@@ -566,6 +567,11 @@ margin-bottom: 85px;
 .rows{
   display:flex;
       width: 30vw;
+}
+.rowed
+{
+  display:flex;
+  width:95vw;
 }
    
       .insta {
@@ -942,7 +948,7 @@ font-family: 'Inter';
   line-height: 10px;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  padding: 0.5vw 2vw;
+padding-left:8vw;
     }
       .writeup {
         position: relative;
@@ -1122,7 +1128,8 @@ font-family: 'Inter';
         margin-top: 8vh;
     
         margin-right: 1px;
-        background: #959595;
+        background: #000000;
+        opacity:0.7;
         border-radius: 0.721429px;
       }
     
@@ -1130,7 +1137,7 @@ font-family: 'Inter';
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 17px;
         letter-spacing: 0.03em;
         padding: 25px;
@@ -1139,6 +1146,7 @@ font-family: 'Inter';
       }
     .heads{
 display: flex;
+margin-left:6vw;
     }
     .container{
       transform:scale(0.6) !important;
@@ -1504,10 +1512,10 @@ display: flex;
           flex-direction: row;
           align-items: center;
           width: 50vw;
-          margin-top: 13px;
+          margin-top: -3px;
         }
     .subscribe-text {
-      margin-top: 5px;
+      margin-top: -41px;
       margin-left: 1px;
     font-size:26px;
     overflow:hidden;
@@ -1703,24 +1711,26 @@ display: flex;
         }
     .writeup {
       height: auto;
-      width: 100vw;
-      position: relative;
-      margin-bottom: 2vh;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 26px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      overflow-x: hidden;
-      margin-left: 1vw;
-      color: #888888;
+        width: 100vw;
+        position: relative;
+        margin-bottom: 2vh;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        overflow-x: hidden;
+        /* margin-left: 1vw; */
+        padding-left: 2px;
+        padding-right: 2px;
+        color: #888888;
     }
            .ayu-img img{
             height: 50px;
               width: 50px;
-              border-radius: 50%;
+              border-radius: 100%;
               display: flex;
               margin-left:10px;
            }
@@ -1937,7 +1947,7 @@ display: flex;
        font-style: normal;
        font-weight: 400;
        font-size:10px;
-       line-height: 13px;
+       line-height: 15px;
        letter-spacing: 0.03em;
        padding:29px;
        color: #FFFFFF;
@@ -1959,13 +1969,13 @@ display: flex;
                   font-family: 'Inter';
                   font-style: normal;
                   font-weight: 400;
-                  font-size: 9px;
-                  line-height: 10px;
+                  font-size: 10px;
+                  line-height: 14px;
                   letter-spacing: 0.03em;
                   color: #FFFFFF;
-                  padding:2.5vw 22vw;
+                  padding:2.5vw 35vw;
                   margin-top:-5vw;
-                  margin-left:15vw;
+                  
                   width:40vw;
                 }
             .box1 {
