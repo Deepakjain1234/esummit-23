@@ -1729,7 +1729,7 @@ margin-left:6vw;
            .ayu-img img{
             height: 50px;
               width: 50px;
-              border-radius: 50%;
+              border-radius: 100%;
               display: flex;
               margin-left:20vw;
            }
