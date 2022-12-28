@@ -28,7 +28,7 @@ function formSubmit(e) {
     {
         founder: document.querySelector('#founder').value,
         Profile: document.querySelector('#Profile').value,
-        about: document.querySelector('#about').value,
+        about: document.querySelector('#aboutcom').value,
         year: document.querySelector('#year').value,
         Headquarter: document.querySelector('#Headquarter').value,
         Website: document.querySelector('#Website').value,
@@ -37,6 +37,7 @@ function formSubmit(e) {
         Revenue: document.querySelector('#Revenue').value,
         profitable: document.querySelector('#profitable').value
     }
+    console.log(data);
 
 
 
