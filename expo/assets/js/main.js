@@ -26,13 +26,16 @@ function formSubmit(e) {
     // Get Values from the DOM
     let data =
     {
-        name: document.querySelector('#name').value,
-        email: document.querySelector('#email').value,
-        branch: document.querySelector('#branch').value,
+        founder: document.querySelector('#founder').value,
+        Profile: document.querySelector('#Profile').value,
+        about: document.querySelector('#about').value,
         year: document.querySelector('#year').value,
-        college: document.querySelector('#college').value,
-        contact: document.querySelector('#phone').value,
-        refferal: document.querySelector('#referral').value,
+        Headquarter: document.querySelector('#Headquarter').value,
+        Website: document.querySelector('#Website').value,
+        employees: document.querySelector('#employees').value,
+        Valuation: document.querySelector('#Valuation').value,
+        Revenue: document.querySelector('#Revenue').value,
+        profitable: document.querySelector('#profitable').value
     }
 
 
