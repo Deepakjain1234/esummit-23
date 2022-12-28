@@ -1710,19 +1710,21 @@ margin-left:6vw;
         }
     .writeup {
       height: auto;
-      width: 100vw;
-      position: relative;
-      margin-bottom: 2vh;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 26px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      overflow-x: hidden;
-      margin-left: 1vw;
-      color: #888888;
+        width: 100vw;
+        position: relative;
+        margin-bottom: 2vh;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        overflow-x: hidden;
+        /* margin-left: 1vw; */
+        padding-left: 2px;
+        padding-right: 2px;
+        color: #888888;
     }
            .ayu-img img{
             height: 50px;
