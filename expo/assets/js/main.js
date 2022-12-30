@@ -35,7 +35,8 @@ function formSubmit(e) {
         employees: document.querySelector('#employees').value,
         Valuation: document.querySelector('#Valuation').value,
         Revenue: document.querySelector('#Revenue').value,
-        profitable: document.querySelector('#profitable').value
+        profitable: document.querySelector('#profitable').value,
+        contact: document.querySelector('#contact').value
     }
     console.log(data);
 
