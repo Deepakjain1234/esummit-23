@@ -1,3 +1,12 @@
+function manitclick(){
+    document.getElementById("non-manit").style.display = "none";
+    document.getElementById("manit").style.display = "block";
+}
+function nonmanitclick(){
+    document.getElementById("non-manit").style.display = "block";
+    document.getElementById("manit").style.display = "none";
+}
+
 var firebaseConfig = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
@@ -14,7 +23,7 @@ document.getElementById(
 	'manit').addEventListener('submit', uploadimage);
 //uploading file in storage
 function uploadimage(){
-	
+	alert("Please wait your id proof is uploading")
 var storage = firebase.storage();
 var file=document.getElementById("files").files[0];
 var storageref=storage.ref();
@@ -37,10 +46,10 @@ thisref.snapshot.ref.getDownloadURL().then(function(downloadURL) {
 // Get values
 var url = getInputVal('url');
 // Save message
-saveMessage(url);
+// saveMessage(url);
 }
 function getInputVal(id){
-	document.getElementById('contactForm').reset();
+	document.getElementById('Stock-manit').reset();
 
 }
 
@@ -54,6 +63,17 @@ return document.getElementById(id).value;
 function saveMessage(url){
 var newMessageRef = messagesRef.push();
 newMessageRef.set({
-imageurl:url,
+    name: document.querySelector('#name').value,
+    email: document.querySelector('#email').value,
+    contact: document.querySelector('#contact').value,
+    year: document.querySelector('#year').value,
+    branch: document.querySelector('#branch').value,    
+    imageurl:url,
 });
+swal({title: "Good job", text: "Registered successfully!", type: 
+"success"}).then(function(){ 
+   location.reload();
+   }
+);
+
 }
