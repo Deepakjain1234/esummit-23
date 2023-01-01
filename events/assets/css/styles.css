@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+#non-manit{
+  display: none;
+}
 
 .secHead{
   font-family: 'Raleway';

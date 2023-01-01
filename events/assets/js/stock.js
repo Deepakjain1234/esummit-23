@@ -1,3 +1,12 @@
+function manitclick(){
+    document.getElementById("non-manit").style.display = "none";
+    document.getElementById("manit").style.display = "block";
+}
+function nonmanitclick(){
+    document.getElementById("non-manit").style.display = "block";
+    document.getElementById("manit").style.display = "none";
+}
+let url=""
 var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
@@ -10,41 +19,71 @@ var config = {
 };
 firebase.initializeApp(config);
 
+
+
+ async function uploadFile(e){
+    alert("dsf")
+
+    e.preventDefault();
+
+      
+    // Created a Storage Reference with root dir
+    var storageRef = firebase.storage().ref();
+    // Get the file from DOM
+    var file = document.getElementById("manitid").files[0];
+    console.log(file);
+    
+    //dynamically set reference to the file name
+    var thisRef = storageRef.child(file.name);
+
+    //put request upload file to firebase storage
+    thisRef.put(file).then(function(snapshot) {
+       alert("File Uploaded")
+       console.log('Uploaded a blob or file!');
+    });
+    thisRef.on('state_changed',function(snapshot) {
+ 
+ 
+    }, function(error) {
+    
+   }, function() {
+    // Uploaded completed successfully, now we can get the download URL
+    thisRef.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+   
+      alert(downloadURL)
+     });
+    });
+    
+  }
+
+
 //Reference for form collection(3)
-let formMessage = firebase.database().ref('StartupRegistration');
+let formMessage = firebase.database().ref('stock-manit');
 
 //listen for submit event//(1)
 document
-    .getElementById('registration')
+    .getElementById('manit')
     .addEventListener('submit', formSubmit);
+    document
+    .getElementById('upload')
+    .addEventListener('submit', uploadFile);
 
 
 //Submit form(1.2)
-function formSubmit(e) {
+async function  formSubmit(e) {
     console.log("submit",e);
     e.preventDefault();
-    // Get Values from the DOM
+    
     let data =
     {
-        founder: document.querySelector('#founder').value,
-        Profile: document.querySelector('#Profile').value,
-        about: document.querySelector('#aboutcom').value,
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        contact: document.querySelector('#contact').value,
         year: document.querySelector('#year').value,
-        Headquarter: document.querySelector('#Headquarter').value,
-        Website: document.querySelector('#Website').value,
-        employees: document.querySelector('#employees').value,
-        Valuation: document.querySelector('#Valuation').value,
-        Revenue: document.querySelector('#Revenue').value,
-        profitable: document.querySelector('#profitable').value,
-        contact: document.querySelector('#contact').value
+        branch: document.querySelector('#branch').value,
+        url:url
     }
     console.log(data);
-
-
-
-
-
-
 
     //send message values
     sendMessage(data);
@@ -58,7 +97,7 @@ function formSubmit(e) {
     }, 7000);
 
     //Form Reset After Submission(7)
-    document.getElementById('registrationform').reset();
+    document.getElementById('manit').reset();
 }
 
 
