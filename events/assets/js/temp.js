@@ -18,7 +18,7 @@ var firebaseConfig = {
     databaseURL: "https://ecell-1b04d-default-rtdb.firebaseio.com/"
 };
 firebase.initializeApp(firebaseConfig);
-var messagesRef = firebase.database().ref('Checking');
+var messagesRef = firebase.database().ref('stock-manit');
 document.getElementById(
 	'manit').addEventListener('submit', uploadimage);
 //uploading file in storage
