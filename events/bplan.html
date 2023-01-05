@@ -478,7 +478,7 @@
         }
     </script>
     <section
-        style="background: url(./assets/images/other/landing.png);height:100vh;display: flex;justify-content: center;background-size: 100vw 100vh;/* background-position-x: right; */background-repeat: no-repeat;background-color: #050608;align-items: center;"
+        style="background: url(./assets/images/nasa-Ed2AELHKYBw-unsplash.webp);height:100vh;display: flex;justify-content: center;background-size: 100vw 100vh;/* background-position-x: right; */background-repeat: no-repeat;background-color: #050608;align-items: center;"
         id="first-section">
         <div id="HeRe" style="/* background: blue; */width: 69.75rem;">
             <div id="eRgf" style="max-width: 51rem;margin-top: 5.0625rem;">
@@ -639,7 +639,7 @@
             • Professional Courses<br>
             • Any other course recognised by the government of India/ respective country<br>
             • Note<br>
-            The participants can register with a team of up to 6, but up to two members will be provided with offline accommodation
+            The participants can register with a team of up to 4, but up to two members will be provided with offline accommodation
             and travel.
         </div>
 
@@ -1155,7 +1155,13 @@ flex-wrap: wrap;
     color: #000000;margin-top:0rem;margin-bottom:3.375rem;" class="vce">Register Now For B.PLAN</div>
             <div class="input-container">
     
-                <form class="form" id="manit">
+                <form class="form" id="registration">
+                    <div>
+                        <div>
+                            <img src="./assets/images/other/4.png" alt="">
+                        </div>
+                        <input type="text" id="team" required placeholder="Team Name">
+                    </div>
                     <div>
                         <div>
                             <img src="./assets/images/other/4.png" alt="">
@@ -1256,131 +1262,42 @@ flex-wrap: wrap;
                         </div>
                         <input type="text" required id="address" placeholder="Address of Institute">
                     </div>
-                    <div>
+                    <!-- <div>
                         <div>
                             <img src="./assets/images/other/3.png" alt="">
                         </div>
                         <input type="text" id="referral" placeholder="Referral Code (optional)">
                         <input type="hidden" name="url" id="url">
-                    </div>
-                    <div>
-    
-                        <h6 class="manit-id">Upload your MANIT id card or any other revlant document</h6>
-    
-                        <input type="file" name="files[]" id="files">
-    
-    
-                    </div>
+                    </div> -->
+                    
     
     
     
     
-                    <button type="button" onclick="uploadimage()" style="
-        width: 7.6588rem;
-        height: 2.9013rem;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.0027rem;
-        line-height: 1.1875rem;
-        text-align: center;
-        letter-spacing: 0.03rem;
-        
-        color: #FFFFFF;
-        
-        background: #00D1FF;
-        border-radius: 0.2321rem;
-        border: none;
-        cursor:pointer;
-        ">
-                        Submit
-                    </button>
+                    <button type="submit"  style="
+    width: 7.6588rem;
+    height: 2.9013rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.0027rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    letter-spacing: 0.03rem;
+    
+    color: #FFFFFF;
+    
+    background: #00D1FF;
+    border-radius: 0.2321rem;
+    border: none;
+    cursor:pointer;
+    "onclick="uploadimage()">
+                    Submit
+                </button>
                 </form>
     
     
     
-                <form class="form" id="non-manit"
-                    action="https://DistortedBusyLoops.deepakjain7.repl.co/api/payment_gateway/payumoney" method="POST">
-                    <div>
-                        <div>
-                            <img src="./assets/images/other/4.png" alt="">
-                        </div>
-                        <input type="text" name="firstname" required placeholder="Name">
-                    </div>
-    
-                    <div>
-                        <div>
-                            <img src="./assets/images/other/2.png" alt="">
-                        </div>
-                        <input type="text" name="email" required placeholder="E-Mail">
-                    </div>
-    
-                    <div>
-                        <div>
-                            <img src="./assets/images/other/1.png" alt="">
-                        </div>
-                        <input type="text" name="country" required placeholder="Whatsapp number">
-                    </div>
-    
-                    <div style="border:none;
-                      justify-content: space-between;">
-    
-                        <div class="fhi vjek"
-                            style="    margin-right: 0.625rem; /* width: 24.4625rem; */display: flex;align-content: center;align-items: center;justify-content: flex-start;margin-bottom: 0;flex-grow: 1;">
-                            <div>
-                                <img src="./assets/images/other/5.png" alt="">
-                            </div>
-                            <input type="text" required name="city" placeholder="College">
-                        </div>
-    
-                        <div class="fhi kejv" style="flex-grow: 1;/* width: 300px; */margin-bottom: 0;">
-                            <div>
-                                <img src="./assets/images/other/5.png" alt="">
-                            </div>
-                            <input type="text" required="" name="year" placeholder="Year/Class">
-                        </div>
-    
-                    </div>
-                    <!-- <div>
-                            <div>
-                                <img src="./assets/images/other/5.png" alt="">
-                            </div>
-                            <input type="text" required placeholder="Branch/section">
-                        </div> -->
-                    <div>
-                        <div>
-                            <img src="./assets/images/other/3.png" alt="">
-                        </div>
-                        <input type="text" placeholder="Referral Code (optional)">
-                        <input type="hidden" name="amount" value="100">
-                        <input type="hidden" name="state" value="stock-nonmanit">
-    
-                    </div>
-    
-    
-    
-    
-                    <button type="submit" style="
-        width: 8.7588rem;
-        height: 2.9013rem;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.0027rem;
-        line-height: 1.1875rem;
-        text-align: center;
-        letter-spacing: 0.03rem;
-        
-        color: #FFFFFF;
-        
-        background: #00D1FF;
-        border-radius: 0.2321rem;
-        border: none;
-        cursor:pointer;
-        ">
-                        Proceed To Pay
-                    </button>
-                </form>
     
             </div>
     </section>
