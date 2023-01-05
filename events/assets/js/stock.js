@@ -1,12 +1,12 @@
-function manitclick() {
+function manitclick(){
     document.getElementById("non-manit").style.display = "none";
     document.getElementById("manit").style.display = "block";
 }
-function nonmanitclick() {
+function nonmanitclick(){
     document.getElementById("non-manit").style.display = "block";
     document.getElementById("manit").style.display = "none";
 }
-let url = ""
+let url=""
 var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
@@ -21,40 +21,40 @@ firebase.initializeApp(config);
 
 
 
-async function uploadFile(e) {
+ async function uploadFile(e){
     alert("dsf")
 
     e.preventDefault();
 
-
+      
     // Created a Storage Reference with root dir
     var storageRef = firebase.storage().ref();
     // Get the file from DOM
-    var file = document.getElementById("manit-id").files[0];
+    var file = document.getElementById("manitid").files[0];
     console.log(file);
-
+    
     //dynamically set reference to the file name
     var thisRef = storageRef.child(file.name);
 
     //put request upload file to firebase storage
-    thisRef.put(file).then(function (snapshot) {
-        alert("File Uploaded")
-        console.log('Uploaded a blob or file!');
+    thisRef.put(file).then(function(snapshot) {
+       alert("File Uploaded")
+       console.log('Uploaded a blob or file!');
     });
-    thisRef.on('state_changed', function (snapshot) {
-
-
-    }, function (error) {
-
-    }, function () {
-        // Uploaded completed successfully, now we can get the download URL
-        thisRef.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-            console.log('File available at', downloadURL);
-            alert(downloadURL)
-        });
+    thisRef.on('state_changed',function(snapshot) {
+ 
+ 
+    }, function(error) {
+    
+   }, function() {
+    // Uploaded completed successfully, now we can get the download URL
+    thisRef.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+   
+      alert(downloadURL)
+     });
     });
-
-}
+    
+  }
 
 
 //Reference for form collection(3)
@@ -64,16 +64,16 @@ let formMessage = firebase.database().ref('stock-manit');
 document
     .getElementById('manit')
     .addEventListener('submit', formSubmit);
-document
+    document
     .getElementById('upload')
     .addEventListener('submit', uploadFile);
 
 
 //Submit form(1.2)
-async function formSubmit(e) {
-    console.log("submit", e);
+async function  formSubmit(e) {
+    console.log("submit",e);
     e.preventDefault();
-
+    
     let data =
     {
         name: document.querySelector('#name').value,
@@ -81,7 +81,7 @@ async function formSubmit(e) {
         contact: document.querySelector('#contact').value,
         year: document.querySelector('#year').value,
         branch: document.querySelector('#branch').value,
-        url: url
+        url:url
     }
     console.log(data);
 
@@ -110,13 +110,11 @@ function sendMessage(data) {
     newFormMessage.set(data);
     // alert("your application submited");
 
-    swal({
-        title: "Good job", text: "Registered successfully!", type:
-            "success"
-    }).then(function () {
-        location.reload();
-    }
-    );
+    swal({title: "Good job", text: "Registered successfully!", type: 
+"success"}).then(function(){ 
+   location.reload();
+   }
+);
     // location.reload();
     // displayMessage();
 
