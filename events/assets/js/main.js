@@ -1,4 +1,41 @@
+function manitclick(){
+    document.getElementById("non-manit").style.display = "none";
+    document.getElementById("manit").style.display = "block";
+}
+function nonmanitclick(){
+    document.getElementById("non-manit").style.display = "block";
+    document.getElementById("manit").style.display = "none";
+}
+let url = ""
 
+function uploadimage() {
+    alert("Please wait your id proof is uploading")
+    var storage = firebase.storage();
+    var file = document.getElementById("files").files[0];
+    console.log(file);
+    var storageref = storage.ref();
+    var thisref = storageref.child(file.name).put(file);
+    thisref.on('state_changed', function (snapshot) {
+
+
+    }, function (error) {
+
+    }, function () {
+        // Uploaded completed successfully, now we can get the download URL
+        thisref.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+            //getting url of image
+            alert('uploaded successfully'+downloadURL);
+            url = downloadURL;
+            // saveMessage(downloadURL);
+            formSubmit(downloadURL);
+        });
+    });
+
+    // Get values
+    var url = getInputVal('url');
+    // Save message
+    // saveMessage(url);
+}
 
 var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
@@ -13,7 +50,7 @@ var config = {
 firebase.initializeApp(config);
 
 //Reference for form collection(3)
-let formMessage = firebase.database().ref('StartupRegistration');
+let formMessage = firebase.database().ref('BPlan-Event-Registration');
 
 //listen for submit event//(1)
 document
@@ -23,44 +60,29 @@ document
 
 //Submit form(1.2)
 function formSubmit(e) {
-    console.log("submit",e);
-    e.preventDefault();
     // Get Values from the DOM
+    console.log("form submitted", e);
     let data =
     {
-        founder: document.querySelector('#founder').value,
-        Profile: document.querySelector('#Profile').value,
-        about: document.querySelector('#aboutcom').value,
-        year: document.querySelector('#year').value,
-        Headquarter: document.querySelector('#Headquarter').value,
-        Website: document.querySelector('#Website').value,
-        employees: document.querySelector('#employees').value,
-        Valuation: document.querySelector('#Valuation').value,
-        Revenue: document.querySelector('#Revenue').value,
-        profitable: document.querySelector('#profitable').value,
-        contact: document.querySelector('#contact').value
+        name1: document.getElementById('name1').value,
+        email1: document.getElementById('email1').value,
+        contact1: document.getElementById('contact1').value,
+        name2: document.getElementById('name2').value,
+        email2: document.getElementById('email2').value,
+        contact2: document.getElementById('contact2').value,
+        name3: document.getElementById('name3').value,
+        email3: document.getElementById('email3').value,
+        contact3: document.getElementById('contact3').value,
+        name4: document.getElementById('name4').value,
+        email4: document.getElementById('email4').value,
+        contact4: document.getElementById('contact4').value,
+        institute: document.getElementById('Institue').value,
+        address: document.getElementById('address'),
+        referral: document.getElementById('referral').value,
+        idproof: e,
     }
     console.log(data);
-
-
-
-
-
-
-
-    //send message values
     sendMessage(data);
-
-    //Show Alert Message(5)
-    document.querySelector('.alert').style.display = 'block';
-
-    //Hide Alert Message After Seven Seconds(6)
-    setTimeout(function () {
-        document.querySelector('.alert').style.display = 'none';
-    }, 7000);
-
-    //Form Reset After Submission(7)
-    document.getElementById('registrationform').reset();
 }
 
 
