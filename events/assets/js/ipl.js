@@ -52,6 +52,24 @@ function getInputVal(id) {
 // Save message to firebase database
 function saveMessage(url) {
     var newMessageRef = messagesRef.push();
+    console.log(document.getElementById('team').value);
+    console.log({
+        Team: document.getElementById('team').value,
+        name1: document.getElementById('name1').value,
+        email1: document.getElementById('email1').value,
+        contact1: document.getElementById('contact1').value,
+        name2: document.getElementById('name2').value,
+        email2: document.getElementById('email2').value,
+        contact2: document.getElementById('contact2').value,
+        name3: document.getElementById('name3').value,
+        email3: document.getElementById('email3').value,
+        contact3: document.getElementById('contact3').value,
+        name4: document.getElementById('name4').value,
+        email4: document.getElementById('email4').value,
+        contact4: document.getElementById('contact4').value,
+        institute: document.getElementById('Institue').value,
+        imageurl: url,
+    })
     newMessageRef.set({
         Team: document.getElementById('team').value,
         name1: document.getElementById('name1').value,
@@ -69,12 +87,8 @@ function saveMessage(url) {
         institute: document.getElementById('Institue').value,
         imageurl: url,
     });
-    swal({
-        title: "Good job", text: "Registered successfully!", type:
-            "success"
-    }).then(function () {
-        window.location.reload()
-    }
-    );
+    swal("Good job!", "You have successfully", "success").then(() => {
+        window.location.reload();
+    });
 
 }
