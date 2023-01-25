@@ -1,0 +1,60 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glitter {
+  0% {
+    /* width: 1.36; */
+    /* height: 1.36; */
+    opacity: 0;
+  }
+  25% {
+    /* width: 2.72; */
+    /* height: 2.72; */
+    opacity: 1;
+  }
+  50% {
+    /* width: 1.36;
+    height: 1.36; */
+    opacity: 0;
+  }
+  75% {
+    /* width: 2.72;
+    height: 2.72; */
+    opacity: 1;
+  }
+  100% {
+    /* width: 1.36;
+    height: 1.36; */
+    opacity: 0;
+  }
+}
+
+
+#event-section {
+  position: relative;
+  /* height: 200vh; */
+  width: 100vw;
+  /* left: -150vw;
+  top: -150vh; */
+  overflow: hidden;
+  /* background: #000; */
+  /* transform-origin: 50% 50%; */
+  /* animation: spin 500s linear 0s infinite normal; */
+}
+
+.star {
+  position: absolute;
+
+  background: linear-gradient(212.94deg, #17F892 17.81%, #34B1F2 86.99%);
+  opacity: 1;
+  border-radius: 50%;
+  /* transition-property: all; */
+  /* animation: glitter 8s ease-in 0s infinite normal; */
+}

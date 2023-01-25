@@ -1,4 +1,7 @@
 
+
+
+
 var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
@@ -12,7 +15,7 @@ var config = {
 firebase.initializeApp(config);
 
 //Reference for form collection(3)
-let formMessage = firebase.database().ref('Hackathon');
+let formMessage = firebase.database().ref('pass');
 
 //listen for submit event//(1)
 document
@@ -27,29 +30,13 @@ function formSubmit(e) {
     // Get Values from the DOM
     let data =
 {
-    Team: document.getElementById('teamname').value,
-    name1: document.getElementById('name1').value,
-    email1: document.getElementById('email1').value,
-    contact1: document.getElementById('contact1').value,
-    github1: document.getElementById('github1').value,
-    profile1: document.getElementById('profile1').value,
-    name2: document.getElementById('name2').value,
-    email2: document.getElementById('email2').value,
-    contact2: document.getElementById('contact2').value,
-    github2: document.getElementById('github2').value,
-    profile2: document.getElementById('profile2').value,
-    
-    name3: document.getElementById('name3').value,
-    email3: document.getElementById('email3').value,
-    contact3: document.getElementById('contact3').value,
-    github3: document.getElementById('github3').value,
-    profile3: document.getElementById('profile3').value,
-    name4: document.getElementById('name4').value,
-    email4: document.getElementById('email4').value,
-    contact4: document.getElementById('contact4').value,
-    github4: document.getElementById('github4').value,
-    profile4: document.getElementById('profile4').value,
-    institute: document.getElementById('Institue').value
+    name: document.querySelector('#name').value,
+    email: document.querySelector('#email').value,
+    contact: document.querySelector('#contact').value,
+    year: document.querySelector('#year').value,
+    branch: document.querySelector('#branch').value, 
+    college: document.querySelector('#college').value, 
+    code: document.querySelector('#code').value
    
 }
     console.log(data);

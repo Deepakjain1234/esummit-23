@@ -1,0 +1,967 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Passes</title>
+  <!-- <link rel="stylesheet" href="mobile.css" /> -->
+  <link rel="stylesheet" href=".assets/css/style3.css">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="./assets/css/animate.css">
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+    rel="stylesheet">
+  <style>
+    .bri::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      opacity: 1;
+      /* Firefox */
+    }
+
+    .bri:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: white;
+    }
+
+    .bri::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: white;
+    }
+
+    .fas {
+      color: white;
+    }
+
+    .far {
+      color: white;
+    }
+
+    .itbdiv {
+      width: 24.5rem;
+      height: 25rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      font-size: inherit;
+    }
+
+    .itbdiv>img {
+      height: 7.0625rem;
+    }
+
+    .parent {
+      display: flex;
+      color: rgba(232, 232, 232, 1);
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .itbhead {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6303rem;
+      line-height: 2rem;
+      letter-spacing: 0.03rem;
+      margin-top: 33px;
+      margin-bottom: 18px;
+      color: #E8E8E8;
+    }
+
+    .itbdesc {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.0625rem;
+      line-height: 1.625rem;
+      width: 19.9375rem;
+      text-align: justify;
+      letter-spacing: 0.05rem;
+      color: #E8E8E8;
+      word-spacing: -2px;
+      word-break: break-all;
+    }
+
+    .circleGauge {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 8px;
+      stroke-dasharray: 29.5rem;
+      stroke-dashoffset: 29.5rem;
+      animation: anim 2s linear forwards;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: rotate(-90deg);
+    }
+
+    .circleFull {
+      fill: none;
+      stroke: url(#GradientColor);
+      stroke-width: 2px;
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: rotate(-90deg);
+    }
+
+
+    @keyframes anim {
+      100% {
+        stroke-dashoffset: 14.75rem;
+      }
+    }
+
+    .timerDigits {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100;
+      font-size: 3.2934rem;
+      line-height: 4rem;
+
+      letter-spacing: 0.03rem;
+
+      fill: #FFFFFF;
+
+    }
+
+    .timerCaptions {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.375rem;
+      line-height: 1.6875rem;
+
+      letter-spacing: 0.03rem;
+
+      fill: #E8E8E8;
+    }
+
+    @media (max-width: 1400px) {
+
+      html {
+        font-size: 13.7px;
+      }
+
+
+    }
+
+    @media (max-width: 1300px) {
+
+      html {
+        font-size: 13px;
+      }
+
+      .parent {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+
+      html {
+        font-size: 12px;
+      }
+
+      .parent {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+
+      html {
+        font-size: 10px;
+
+      }
+
+      .parent {
+        font-size: 8px;
+      }
+
+    }
+
+
+
+    @media (max-width: 900px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 9px !important;
+      }
+
+
+    }
+
+    @media (max-width: 800px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 7px !important;
+      }
+
+
+    }
+
+    @media (max-width: 700px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 6px !important;
+      }
+
+
+    }
+
+    @media (max-width: 600px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 5px !important;
+      }
+
+
+    }
+
+    @media (max-width: 500px) {
+
+      /* footer causing overflow making menu burger icon outside viewport; */
+      html {
+        font-size: 4px !important;
+      }
+
+
+    }
+
+    @media (max-width: 400px) {
+
+      html {
+        font-size: 7px !important;
+
+      }
+
+      #HeRe {
+        margin-top: 25rem;
+      }
+
+      .parent {
+        font-size: 11.9px;
+      }
+
+      .itbhead {
+        margin-top: unset;
+        margin-bottom: unset;
+      }
+
+      .burger div {
+        width: 4.5625rem;
+        height: 0.475rem;
+        /* background-color: #EA8A01; */
+        background-color: white;
+        margin: 0.8125rem;
+        /* border-radius: 3px; */
+        transition-duration: 500ms;
+      }
+
+      .burger {
+        display: block;
+        position: fixed;
+        right: -1rem;
+        top: 1.3rem;
+        margin-right: 0.625rem;
+        z-index: 1001;
+        transform: scale(0.7);
+      }
+
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-2.0625rem, 1.75rem) !important;
+      }
+
+      nav {
+        background: rgba(4, 7, 13, 0.85) !important;
+        padding: 10px 20px;
+      }
+
+      #first-section {
+        height: calc(100vh - 7rem) !important;
+        text-align: center;
+        background: url(./assets/images/other/lpg.png) !important;
+        /* height: 100vh !important; */
+        display: flex !important;
+        align-content: center !important;
+        justify-content: center !important;
+        background-size: cover !important;
+        /* background-position-y: -5rem !important; */
+        background-repeat: no-repeat !important;
+        background-color: #050608 !important;
+        overflow: hidden;
+
+      }
+
+      #eRgf {
+        max-width: unset !important;
+        margin-top: 0px !important;
+      }
+
+      #HeRe {
+        margin-top: 17rem !important;
+      }
+
+
+      .tagline {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8.01937px !important;
+        line-height: 10px !important;
+        text-align: center;
+        letter-spacing: 0.03em !important;
+        /* padding: 0px 41px; */
+      }
+
+      .social-bigs {
+        display: none;
+        position: unset;
+        /* z-index: 1000; */
+        /* display: flex !important; */
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center !important;
+        /* right: 50px; */
+        /* bottom: 50px; */
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+        font-size: 2em !important;
+        /* top: 9em !important; */
+        align-content: center;
+        padding-top: 0.8125rem;
+      }
+
+      .social-bigs::before {
+        display: none;
+      }
+
+      .itbdesc {
+        text-align: justify;
+      }
+
+      .nav-link {
+        font-size: 2.5rem;
+      }
+
+      #logo {
+        /* height: 5.875rem; */
+        width: 15.875em;
+        margin: unset;
+        margin-top: 2em;
+        transition: 0.4s;
+      }
+
+      #HeRe {
+        position: relative;
+        /* top: -28px; */
+      }
+
+      #HeRe {
+        position: relative;
+        /* top: -28px; */
+      }
+
+      .wall-heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800 !important;
+        font-size: 32.936px !important;
+        line-height: 40px !important;
+        letter-spacing: 0.15em !important;
+        text-align: left !important;
+        width: auto !important;
+        color: #E8E8E8;
+      }
+
+      .sub-heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600 !important;
+        font-size: 47.5984px !important;
+        line-height: 58px !important;
+        letter-spacing: 0.07em !important;
+        width: auto !important;
+        color: white;
+        text-align: left !important;
+
+      }
+
+      #HeRe {
+        width: auto !important;
+      }
+
+      .tagline {
+        padding: 0px !important;
+      }
+
+      #HeRe {
+        margin-top: 29rem !important;
+      }
+
+      .burger {
+        margin-top: 1.5rem !important
+      }
+
+      .sch {
+        height: 28.0625rem !important;
+      }
+    }
+  </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+
+   <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+<body style="width:100vw;">
+  <script>
+    // alert("w=" + window.innerWidth + " h=" + window.innerHeight);
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+
+
+  </script>
+  <nav style="opacity: 1; ">
+    <a href="https://www.ecellnitb.com" style="
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    "><img id="logo" src="./assets/images/other/logo.png"
+        style="width: 10.875rem; margin-left: 2.9375em !important;"></a>
+
+    <ul class="nav nav-items" style="text-transform: uppercase;">
+      <li class="nav-link"><a onclick="closeNav()" href="#first-section">Home</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#about">about us</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#gallery">events</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#register">speakers</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#sponsor">schedule</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="#sponsor">why attend</a></li>
+      <!-- <li class="nav-link"><a href="./faq/">faqs</a></li> -->
+
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+
+  <img id="a" src="./assets/images/other/text.png" style="
+  width: 100%;
+  height: auto;
+  margin-top:0px;
+  " alt="">
+  <img src="./assets/images/other/art.png" style="
+width: 100%;
+height: auto;
+" alt="">
+  <script>
+    document.getElementById("a").style.marginTop = document.getElementsByTagName("nav")[0].getBoundingClientRect().height + "px";
+
+  </script>
+  <section id="register" class="effe"
+    style="background:url(./assets/images/other/background.png);width: 100%;/* padding-top: 7.3125rem; *//* padding-right: 10.1875rem; */background-size: cover;/* padding-bottom: 6.2188rem; */box-sizing: border-box;">
+
+    <div style="
+    /* height: 100%; */
+    width: 61.625rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  " class="evd">
+      <style>
+        .form>div,
+        .form>div>.fhi {
+          width: 61.625rem;
+          height: 3.5625rem;
+          margin-bottom: 0.8125rem;
+          border: 0.1425rem solid #1D8AE8;
+          border-radius: 0.7042rem;
+          display: flex;
+          align-content: center;
+          align-items: center;
+        }
+
+        .fhi {
+          /* margin: 0 !important; */
+        }
+
+        .form>div>div,
+        .form>div>div>div {
+          width: 4.4375rem;
+          height: 100%;
+          /* background-color: red; */
+          /* padding: 15px 0px; */
+          display: inline-block;
+          display: flex;
+          box-sizing: border-box;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .form>div>input,
+        .form>div>div>input {
+          background: none;
+          border: none;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.1607rem;
+          line-height: 1.375rem;
+          color: #545454;
+          outline: none;
+          width: 100%;
+          height: 100%;
+        }
+
+        .form>div>div>img,
+        .fhi>div>img {
+          width: 1.25rem;
+        }
+      </style>
+      <div style="
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      margin-top:5.875rem;
+      margin-bottom:2.125rem;
+      font-size: 2.7294rem;
+      line-height: 3.3125rem;
+      letter-spacing: 0.03em;
+      color: #545454;
+      text-align: center;
+      " class="vce">Register Now For Passes</div>
+     <form  id="registration">
+      <div class="form">
+        <div>
+          <div>
+            <img src="./assets/images/other/4.png" alt="">
+          </div>
+          <input type="text" required id="name" placeholder="Name">
+        </div>
+
+        <div>
+          <div>
+            <img src="./assets/images/other/2.png" alt="">
+          </div>
+          <input type="text" required id="email" placeholder="E-Mail">
+        </div>
+
+        <div>
+          <div>
+            <img src="./assets/images/other/1.png" alt="">
+          </div>
+          <input type="text" required id="contact" placeholder="Whatsapp number">
+        </div>
+
+        <div style="border:none;
+        justify-content: space-between;">
+
+          <div class="fhi vjek"
+            style="    margin-right: 0.625rem; /* width: 24.4625rem; */display: flex;align-content: center;align-items: center;justify-content: flex-start;margin-bottom: 0;flex-grow: 1;">
+            <div>
+              <img src="./assets/images/other/5.png" alt="">
+            </div>
+            <input type="text" required id="college" placeholder="College">
+          </div>
+
+          <div class="fhi kejv" style="flex-grow: 1;/* width: 300px; */margin-bottom: 0;">
+            <div>
+              <img src="./assets/images/other/5.png" alt="">
+            </div>
+            <input type="text" required id="year" placeholder="Year/Class">
+          </div>
+
+        </div>
+        <div>
+          <div>
+            <img src="./assets/images/other/5.png" alt="">
+          </div>
+          <input type="text" required id="branch" placeholder="Branch/section">
+        </div>
+        <div>
+          <div>
+            <img src="./assets/images/other/3.png" alt="">
+          </div>
+          <input type="text" id="code" placeholder="Referral Code (optional)">
+        </div>
+
+      </div>
+      <div style="margin-top:1.5625rem;margin-bottom:2.3125rem;text-align: center;">
+        <div style="
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.1607rem;
+line-height: 1.375rem;
+
+color: #545454;
+  " class="eiow">
+          By Clicking on Submit you agree on our
+          <span><a href="https://esummit.ecellnitb.com/TC.pdf"
+              style="color: #1D8AE8;text-decoration:underline !important;">Terms and Conditions</a></span>
+        </div>
+
+
+      </div>
+      <button type="submit" 
+        style="font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 1.0027rem;line-height: 1.1875rem;text-align: center;letter-spacing: 0.03rem;color: #FFFFFF;border-radius: 0.2321rem;border: none;cursor:pointer;width: 8.3006rem;height: 3.1444rem;background: #0C76FF;margin-bottom: 65px;">
+        Submit
+      </button>
+
+     </form>
+
+    </div>
+  </section>
+
+  <section class="cnii">
+    <div class="footer-tab" style="
+    background: linear-gradient(93.45deg, #83B6E2 -6.76%, #4E9FE5 23.81%, #1D8AE8 51.71%, #52A1E5 79.03%, #83B6E2 104.83%);background: linear-gradient(93.45deg, #83B6E2 -6.76%, #4E9FE5 23.81%, #1D8AE8 51.71%, #52A1E5 79.03%, #83B6E2 104.83%);
+">
+      <div style="
+              /* width: 45%; */
+              height: 100%;
+              margin-top: -2.125em;
+              flex-grow: 0.7;
+          " id="conDet">
+
+        <div class="foot-contact" style="font-family: 'Noto Sans';">
+          <div class="contact-head">
+            <h2 style="
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.875em;
+            line-height: 2.25em;
+            letter-spacing: 0.12em;
+            margin-top: 0em;
+            margin-bottom: .7em;
+            color: #414141;
+            ">Contact Us</h2>
+          </div>
+          <div class="info-our">
+            <div class="info-our-body">
+              <i class="fas fa-phone-volume" aria-hidden="true">&nbsp;</i>
+              <a href="tel:+918989473997" style="color:white;">+91 7757877965</a>
+            </div>
+            <div class="info-our-body">
+              <i class="far fa-envelope" aria-hidden="true">&nbsp;</i>
+              <a href="mailto: support@ecellnitb.com" style="color:white;"> support@ecellnitb.com</a>
+            </div>
+            <div class="info-our-body">
+              <i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;</i>
+              <div style="
+                      display: inline-block;
+                      width: 22em;
+                      vertical-align: middle;
+                      color:White;
+                  " class="mact">Maulana Azad National Institute of Technology, Bhopal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box" style="
+    /* flex-grow: 1; */
+    border-left: 0.0313em solid #CACACA;
+    padding-left: 5.25em;
+">
+        <label
+          style="font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        text-align: center;
+        letter-spacing: 0.12em;color: #414141;;margin-bottom: 1.5625em;position: relative;top: 0.5625em;display: inline-block;">Write
+          to us</label>
+        <form action="https://formspree.io/f/xzbwvlre" method="POST">
+          <div class="input-container">
+            <input type="text" class="bri" required="" name="name" placeholder="Fullname">
+          </div>
+          <div class="input-container">
+            <input type="mail" class="bri" required="" name="email" placeholder="Email">
+          </div>
+          <div class="input-container">
+            <textarea type="text" class="bri" style="font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 0.9375em;
+                        line-height: 1.125em;" required="" name="messege" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- nav script starts here -->
+  <script>
+
+    
+    const navSlide = () => {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-items');
+      const navLinks = document.querySelectorAll('.nav-link');
+      // Toggle Nav
+
+      burger.addEventListener('click', () => {
+        navLinks.forEach((link, index) => {
+          link.style.animationDelay = '0ms';
+        });
+        if (document.querySelector('.nav-items').classList.contains('nav-active')) {
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'CloseLinkFade 1s ease forwards';
+          });
+          setTimeout(() => {
+            nav.classList.toggle('nav-active');
+          }, 250);
+          document.getElementsByTagName("body")[0].setAttribute("style", "overflow-y:auto; margin: 0;padding: 0;overflow-x: hidden;scroll-behavior: smooth;background-color:Black;");
+        } else {
+          nav.classList.toggle('nav-active');
+          navLinks.forEach((link, index) => {
+            link.style.animation = 'navLinkFade 1s ease forwards';
+            link.style.animationDelay = ((index + 1) * 300) + 'ms';
+          });
+          document.getElementsByTagName("body")[0].setAttribute("style", "overflow-y:hidden; margin: 0;padding: 0;overflow-x: hidden;scroll-behavior: smooth;background-color:Black;");
+        }
+
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+      });
+
+
+    }
+    navSlide();
+  </script>
+  <!-- nav script ends here -->
+  <script>
+    let bullets = document.getElementsByClassName("event-timeline");
+
+    Array.from(bullets).forEach(e => {
+      e.addEventListener("click", () => {
+        e.classList.toggle("active");
+      });
+    });
+
+    function changeTOBlack() {
+      document.querySelector(".btn-jan").classList.add("btn-feb-click");
+      document.querySelector(".btn-feb").classList.remove("btn-feb-click");
+      if (document.querySelector(".timeline").classList.contains("timeline-click")) {
+        document.querySelector(".timeline").classList.remove("timeline-click");
+        document.querySelector(".timeline2").classList.remove("timeline2-click");
+      }
+
+
+    }
+    function changeTOBlue() {
+      document.querySelector(".btn-feb").classList.add("btn-feb-click");
+      document.querySelector(".btn-jan").classList.add("btn-jan-click");
+      document.querySelector(".btn-jan").classList.remove("btn-feb-click");
+      if (!document.querySelector(".timeline2").classList.contains("timeline2-click")) {
+        document.querySelector(".timeline2").classList.add("timeline2-click");
+        document.querySelector(".timeline").classList.add("timeline-click");
+      }
+
+
+
+    }
+  </script>
+
+  <script>
+
+
+
+
+  </script>
+  <script>
+    // navbar shrink script starts here
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+
+
+      if (window.innerWidth > 1110) {
+        let nav = document.getElementsByTagName("nav")[0].style;
+        let logo = document.getElementById("logo").style;
+        let navItem = document.getElementsByClassName("nav")[0].style;
+
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          nav.height = "4.625rem";
+          logo.width = "6.75rem";
+        } else {
+          nav.height = "7rem";
+          logo.width = "10.875rem";
+        }
+      }
+
+
+
+      if (document.documentElement.scrollTop < 220) {
+        let progress = Math.trunc(document.documentElement.scrollTop) / 220;
+
+        document.getElementsByClassName("wall-heading")[0].style.opacity = (1 - (0.9 * progress));
+
+        document.getElementsByClassName("sub-heading")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("tagline")[0].style.opacity = (1 - (0.9 * (progress)));
+
+        document.getElementsByClassName("social")[0].style.opacity = (1 - (0.9 * (progress)));
+      }
+      document.getElementById("a").style.marginTop = document.getElementsByTagName("nav")[0].getBoundingClientRect().height + "px";
+    }
+  // navbar shrink script ends here
+
+  </script>
+
+
+
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+  </script>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+  </script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script> -->
+
+
+</body>
+
+</html>
