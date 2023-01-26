@@ -1,8 +1,41 @@
 /* import fonts here  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500&family=Montserrat:wght@600;700;800&family=Raleway:wght@800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap');
 
-
+.prepre{
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.pre-left{
+  width: 15vw;
+  margin: auto;
+  text-align:left ;
+  margin-top: 0;
+}
+.pre-right{
+  width: 65vw;
+  margin: auto;
+  text-align: left;
+}
+@media (max-width:500px) {
+  .prepre{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+  }
+  .pre-left{
+    width: 25vw;
+    margin: auto;
+    margin-top: 0;
+  }
+  .pre-right{
+    width: 55vw;
+    margin: auto;
+    text-align: left;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -46,17 +79,20 @@ color: #656565;
 .sh::-webkit-scrollbar {
   display: none;
 }
-
+.landing-btn{
+  display: flex;
+  justify-content: space-around;
+}
 /* Hide scrollbar for IE, Edge and Firefox */
 .sh {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.bulletHead::before{
+/* .bulletHead::before{
   content: "";
-  width: 1.0194rem;
-  height: 0.8931rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background: #02020A;
   border-radius: 50%;
   display: inline-block;
@@ -64,7 +100,7 @@ color: #656565;
   top: -0.625rem;
   margin-right: 0.8919rem;
 
-}
+} */
 
 /* nav css start here */
 
