@@ -60,7 +60,6 @@
   <link rel="stylesheet" href="./animate.css" />
   <link rel="stylesheet" href="CSS/stylesAk.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 <style>
   .itbdiv {
@@ -438,6 +437,19 @@
 
 <body style="">
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var hash = "#" + document.location.search.split("=")[1];
+    if (Boolean(document.location.search.split("=")[1])) {
+      console.log(hash);
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500);
+    }
+  }
+  );
+</script>
+  <script>
     // alert("w=" + window.innerWidth + " h=" + window.innerHeight);
     $(document).ready(function () {
       // Add smooth scrolling to all links
@@ -467,6 +479,8 @@
 
 
   </script>
+
+
   <nav style="opacity: 1;">
     <a href="https://www.ecellnitb.com" style="
         display: flex;
@@ -477,7 +491,7 @@
 
     <ul class="nav nav-items" style="text-transform: uppercase;">
       <li class="nav-link"><a onclick="closeNav()" href="#first-section">Home</a></li>
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/pass.html">Passes</a></li>
+      <li class="nav-link"><a onclick="closeNav()" href="./pass.html">Passes</a></li>
       <li class="nav-link"><a onclick="closeNav()" href="./events/expo.html">Startup expo</a></li> 
       <li class="nav-link"><a onclick="closeNav()" href="#event-section">events</a></li>
       <li class="nav-link"><a onclick="closeNav()" href="#speakers">speakers</a></li>

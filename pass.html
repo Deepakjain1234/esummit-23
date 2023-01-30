@@ -443,6 +443,8 @@
 <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
         integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -488,13 +490,13 @@
         style="width: 10.875rem; margin-left: 2.9375em !important;"></a>
 
     <ul class="nav nav-items" style="text-transform: uppercase;">
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/pass.html#register">Register</a></li>
+      <li class="nav-link"><a href="#register">Register</a></li>
 
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/#event-section">events</a></li>
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/#speakers">speakers</a></li>
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/#gallery">gallery</a></li>
-	          <li class="nav-link"><a onclick="closeNav()" href="https://ecellnitb.com/?view=about">about us</a></li>
-      <li class="nav-link"><a onclick="closeNav()" href="https://esummit.ecellnitb.com/#sponsor">sponsors</a></li>
+      <li class="nav-link"><a href="./index.html?view=event-section">events</a></li>
+      <li class="nav-link"><a href="./index.html?view=speakers">speakers</a></li>
+      <li class="nav-link"><a href="./index.html?view=gallery">gallery</a></li>
+	          <li class="nav-link"><a href="https://ecellnitb.com/?view=about">about us</a></li>
+      <li class="nav-link"><a href="./index.html?view=sponsor">sponsors</a></li>
       <!-- <li class="nav-link"><a href="./faq/">faqs</a></li> -->
 
     </ul>
@@ -860,22 +862,22 @@ color: #545454;
           logo.width = "10.875rem";
         }
       }
-
-
-
-      if (document.documentElement.scrollTop < 220) {
-        let progress = Math.trunc(document.documentElement.scrollTop) / 220;
-
-        document.getElementsByClassName("wall-heading")[0].style.opacity = (1 - (0.9 * progress));
-
-        document.getElementsByClassName("sub-heading")[0].style.opacity = (1 - (0.9 * (progress)));
-
-        document.getElementsByClassName("tagline")[0].style.opacity = (1 - (0.9 * (progress)));
-
-        document.getElementsByClassName("social")[0].style.opacity = (1 - (0.9 * (progress)));
-      }
-      document.getElementById("a").style.marginTop = document.getElementsByTagName("nav")[0].getBoundingClientRect().height + "px";
     }
+
+
+    //   if (document.documentElement.scrollTop < 220) {
+    //     let progress = Math.trunc(document.documentElement.scrollTop) / 220;
+
+    //     document.getElementsByClassName("wall-heading")[0].style.opacity = (1 - (0.9 * progress));
+
+    //     document.getElementsByClassName("sub-heading")[0].style.opacity = (1 - (0.9 * (progress)));
+
+    //     document.getElementsByClassName("tagline")[0].style.opacity = (1 - (0.9 * (progress)));
+
+    //     document.getElementsByClassName("social")[0].style.opacity = (1 - (0.9 * (progress)));
+    //   }
+    //   document.getElementById("a").style.marginTop = document.getElementsByTagName("nav")[0].getBoundingClientRect().height + "px";
+    // }
   // navbar shrink script ends here
 
   </script>
