@@ -1,7 +1,4 @@
 
-
-
-
 var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
@@ -18,24 +15,23 @@ firebase.initializeApp(config);
 let formMessage = firebase.database().ref('pass');
 
 //listen for submit event//(1)
-document
-    .getElementById('registration')
-    .addEventListener('submit', formSubmit);
 
 
 //Submit form(1.2)
 function formSubmit(e) {
+    // alert("eor")
     console.log("submit",e);
     e.preventDefault();
+    document.getElementById('college').removeAttribute('required')
     // Get Values from the DOM
     let data =
 {
-    name: document.querySelector('#name').value,
+   name: document.querySelector('#name').value,
     email: document.querySelector('#email').value,
     contact: document.querySelector('#contact').value,
     year: document.querySelector('#year').value,
     branch: document.querySelector('#branch').value, 
-    college: document.querySelector('#college').value, 
+    college: "manit", 
     code: document.querySelector('#code').value
    
 }
