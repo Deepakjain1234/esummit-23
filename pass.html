@@ -1175,24 +1175,26 @@ background-size: cover;width:100%;"></div>
             x.setAttribute("class", "og");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: 0 } });
             previous = 0;
+          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
 
           }
           if (i == 1) {
             x.setAttribute("class", "tg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: window.innerWidth } });
             previous = window.innerWidth;
+          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[1].getBoundingClientRect().height);
           }
           if (i == 2) {
             x.setAttribute("class", "thg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 2) } });
             previous = (window.innerWidth * 2);
+          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[2].getBoundingClientRect().height);
           }
           // if (i == 3) {
           //   x.setAttribute("class", "fg");
           //   gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 3) } });
           //   previous = (window.innerWidth * 3);
           // }
-          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[i].getBoundingClientRect().height);
 
         };
 
