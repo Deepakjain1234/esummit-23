@@ -1187,11 +1187,11 @@ background-size: cover;width:100%;"></div>
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 2) } });
             previous = (window.innerWidth * 2);
           }
-          if (i == 3) {
-            x.setAttribute("class", "fg");
-            gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 3) } });
-            previous = (window.innerWidth * 3);
-          }
+          // if (i == 3) {
+          //   x.setAttribute("class", "fg");
+          //   gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 3) } });
+          //   previous = (window.innerWidth * 3);
+          // }
           document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[i].getBoundingClientRect().height);
 
         };
@@ -1207,7 +1207,8 @@ background-size: cover;width:100%;"></div>
     </script> -->
     <div class="scrollable" style="width: 100vw;overflow: scroll hidden;height: 1024px;" id="wind">
       <div style="
-      width: 400vw;
+      width: 300vw;
+      /* width: 400vw; */
   ">
         <div class="plan">
           <div class="cards" style="margin-top:0px !important;">
@@ -1393,6 +1394,7 @@ background-size: cover;width:100%;"></div>
             </div>
           </div>
         </div>
+
         <div class="plan">
           <div class="cards" style="margin-top:0px !important;">
             <div class="avatar" style="background: url(./assets/images/arsh.png);"></div>
@@ -1413,10 +1415,12 @@ background-size: cover;width:100%;"></div>
           </div>
 
         </div>
-        <div class="plan">
+
+        <!-- <div class="plan">
 
 
-        </div>
+        </div> -->
+
       </div>
     </div>
   </section>
