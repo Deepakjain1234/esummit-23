@@ -212,9 +212,9 @@
       fill: #E8E8E8;
     }
 
-    
+
     input[type="radio"] {
-      outline:none;
+      outline: none;
     }
 
     @media (max-width: 1400px) {
@@ -269,6 +269,7 @@
       html {
         font-size: 9px !important;
       }
+
       input[type="radio"] {
         margin-left: 1.5rem;
         margin-right: 0.5rem;
@@ -294,6 +295,7 @@
       html {
         font-size: 7px !important;
       }
+
       input[type="radio"] {
         margin-left: 1.5rem;
         margin-right: 0.5rem;
@@ -906,16 +908,16 @@ height: auto;
 background-size: cover;width:100%;"></div>
     <div id="overlay"
       style="opacity: 0;position: absolute;top: 0px;width: 100vw;height: 100%;background-color: #00000099;display: flex;place-content: center space-evenly;align-items: center;flex-direction: column;background-size: cover;">
-      <div>
-        <div class="tagone">
-          Unleash the power of connection
-        </div>
-        <div class="tagone">
-          and knowledge
-        </div>
-        <div class="tagone">
-          at the electrifying E-Summit!
-        </div>
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text" style="opacity: 0;"> Unleash the power of connection</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text" style="opacity: 0;">and knowledge</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text" style="opacity: 0;">at the electrifying E-Summit!</span>
+        </h1>
       </div>
       <div class="tagtwo">
         Register now to secure your pass and join the revolution.
@@ -1148,6 +1150,37 @@ background-size: cover;width:100%;"></div>
       /* Firefox */
     }
   </style>
+
+
+  <style>
+    .hide {
+      background: transparent;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 46.67px;
+      line-height: 70px;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      margin: 0px;
+      padding: 0px;
+
+      color: #FFFFFF;
+    }
+
+    .hide span {
+      transform: translatey(100%);
+      display: inline-block;
+    }
+  </style>
+  <script>
+
+  </script>
   <section class="schedule">
     <div class="dheading">
       <span class="color dheadtext">Schedule</span>
@@ -1162,8 +1195,11 @@ background-size: cover;width:100%;"></div>
     </div>
     <script>
       setTimeout(() => {
-        gsap.to("#overlay", { opacity: 1, duration: 2.5 });
-      }, 2000)
+        const tl = gsap.timeline({ default: { ease: "power1.out" } });
+
+        tl.to("#overlay", { opacity: 1, duration: 2.5 })
+          .to('.text', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<<");
+      }, 1000)
       var previous = 0;
       var img = Array.from(document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName('img'));
       img.forEach((x, i) => {
@@ -1175,20 +1211,20 @@ background-size: cover;width:100%;"></div>
             x.setAttribute("class", "og");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: 0 } });
             previous = 0;
-          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
+            document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
 
           }
           if (i == 1) {
             x.setAttribute("class", "tg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: window.innerWidth } });
             previous = window.innerWidth;
-          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[1].getBoundingClientRect().height);
+            document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[1].getBoundingClientRect().height);
           }
           if (i == 2) {
             x.setAttribute("class", "thg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 2) } });
             previous = (window.innerWidth * 2);
-          document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[2].getBoundingClientRect().height);
+            document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[2].getBoundingClientRect().height);
           }
           // if (i == 3) {
           //   x.setAttribute("class", "fg");
@@ -1427,6 +1463,9 @@ background-size: cover;width:100%;"></div>
     </div>
   </section>
   <script>
+
+
+
     document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
     window.addEventListener("resize", () => {
       document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
