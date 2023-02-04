@@ -1215,6 +1215,7 @@ background-size: cover;width:100%;"></div>
           .to('.texta3', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<1");
       }, 1000)
       var previous = 0;
+      var current = 0;
       var img = Array.from(document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName('img'));
       img.forEach((x, i) => {
         x.onclick = function () {
@@ -1225,19 +1226,23 @@ background-size: cover;width:100%;"></div>
             x.setAttribute("class", "og");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: 0 } });
             previous = 0;
+            current = 0;
             document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
+
 
           }
           if (i == 1) {
             x.setAttribute("class", "tg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: window.innerWidth } });
             previous = window.innerWidth;
+            current = 1;
             document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[1].getBoundingClientRect().height);
           }
           if (i == 2) {
             x.setAttribute("class", "thg");
             gsap.to("#wind", { duration: 0.7, scrollTo: { x: (window.innerWidth * 2) } });
             previous = (window.innerWidth * 2);
+            current = 2;
             document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[2].getBoundingClientRect().height);
           }
           // if (i == 3) {
@@ -1482,7 +1487,7 @@ background-size: cover;width:100%;"></div>
 
     document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
     window.addEventListener("resize", () => {
-      document.getElementById("wind").style.setProperty("height", document.getElementsByClassName("plan")[0].getBoundingClientRect().height);
+      document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName("img")[current].click();
 
     });
     document.getElementById("wind").addEventListener('scroll', function (e) {
