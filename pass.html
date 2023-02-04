@@ -1957,7 +1957,13 @@ color: #545454;
     //   }
     //   document.getElementById("a").style.marginTop = document.getElementsByTagName("nav")[0].getBoundingClientRect().height + "px";
     // }
-  // navbar shrink script ends here
+    // navbar shrink script ends here
+
+
+    setInterval(() => {
+      document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName("img")[(current + 1) % 3].click();
+
+    }, 4000)
 
   </script>
 
