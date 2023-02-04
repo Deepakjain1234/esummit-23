@@ -347,6 +347,7 @@
       html {
         font-size: 5px !important;
       }
+
       /* h1 {
     font-family: 'Poppins' !important;
     font-style: normal !important ;
@@ -358,7 +359,7 @@
     margin: 0px;
     padding: 0px;
     color: #FFFFFF; */
-/* } */
+      /* } */
 
     }
 
@@ -921,13 +922,13 @@ background-size: cover;width:100%;"></div>
       style="opacity: 0;position: absolute;top: 0px;width: 100vw;height: 100%;background-color: #00000099;display: flex;place-content: center space-evenly;align-items: center;flex-direction: column;background-size: cover;">
       <div class="intro-text">
         <h1 class="hide">
-          <span class="text" style="opacity: 0;"> Unleash the power of connection</span>
+          <span class="text texta1" style="opacity: 0;"> Unleash the power of connection</span>
         </h1>
         <h1 class="hide">
-          <span class="text" style="opacity: 0;">and knowledge</span>
+          <span class="text texta2" style="opacity: 0;">and knowledge</span>
         </h1>
         <h1 class="hide">
-          <span class="text" style="opacity: 0;">at the electrifying E-Summit!</span>
+          <span class="text texta3" style="opacity: 0;">at the electrifying E-Summit!</span>
         </h1>
       </div>
       <div class="tagtwo">
@@ -1209,7 +1210,9 @@ background-size: cover;width:100%;"></div>
         const tl = gsap.timeline({ default: { ease: "power1.out" } });
 
         tl.to("#overlay", { opacity: 1, duration: 2.5 })
-          .to('.text', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<<");
+          .to('.texta1', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<")
+          .to('.texta2', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<1")
+          .to('.texta3', { y: '0%', opacity: 1, duration: 2, stagger: 0.25 }, "<1");
       }, 1000)
       var previous = 0;
       var img = Array.from(document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName('img'));
