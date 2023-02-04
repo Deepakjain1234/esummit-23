@@ -826,7 +826,8 @@
           button: "Close",
         });
         document.getElementById('pay').innerText = "Proceed To Pay ₹630"
-      } else if (document.getElementById('code').value == 'GDSC') {
+      }
+ else if (document.getElementById('code').value == 'GDSC') {
         swal({
           title: "Applied Successfully!",
           text: "Discount Applied",
@@ -834,6 +835,14 @@
           button: "Close",
         });
         document.getElementById('pay').innerText = "Proceed To Pay ₹595"
+      }else if (document.getElementById('code').value == 'UPDATEBUS') {
+        swal({
+          title: "Applied Successfully!",
+          text: "Discount Applied",
+          icon: "success",
+          button: "Close",
+        });
+        document.getElementById('pay').innerText = "Proceed To Pay ₹650"
       }
       else if (document.getElementById('code').value == 'VIT') {
         swal({
