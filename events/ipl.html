@@ -592,7 +592,7 @@
                             </div>
                         </div>
                         <div class="landing-btn">
-                            <a href="#register">   <button  style="
+                           <button  style="
                                 width: 13.6588rem;
                                 height: 3.9013rem;
                                 font-family: 'Inter';
@@ -609,8 +609,8 @@
                                 border-radius: 0.2321rem;
                                 border: none;
                                 margin-top: 2rem;
-                                cursor:pointer;">Register Now</button>
-                                </a>
+                                cursor:pointer;">Registration closed</button>
+                              
                                 <a href="https://unstop.com/competition/ipl-auction-e-cell-nit-bhopal-587626">   <button  style="
                                     width: 16.6588rem;
                                     height: 3.9013rem;
@@ -621,7 +621,7 @@
                                     line-height: 1.3rem;
                                     text-align: center;
                                     letter-spacing: 0.03rem;
-                                    
+                                    visibility: hidden;
                                     color: #FFFFFF;
                                     
                                     background: #00D1FF;
@@ -672,10 +672,10 @@
             var distance = countDownDate - now;
 
             // Time calculations for days, hours, minutes and seconds
-            var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var s = Math.floor((distance % (1000 * 60)) / 1000);
+            var d = 0;// Math.floor(distance / (1000 * 60 * 60 * 24));
+            var h =0;//  Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var m =0;//  Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var s =0;//  Math.floor((distance % (1000 * 60)) / 1000);
 
             document.getElementById("days").innerHTML = d;
             document.getElementById("hrs").innerHTML = h;
@@ -1167,7 +1167,7 @@ flex-wrap: wrap;
             }
 
         </style>
-    </section>
+    <!-- </section>
     <section id="register"
         class="effe"
         style="background:#F6F6F6;width:100%;min-height:100rem; padding-top: 7.3125rem;padding-right: 10.1875rem;background-size: 29.5rem 35.1875rem;padding-bottom: 6.2188rem;box-sizing: border-box;">
@@ -1491,13 +1491,13 @@ flex-wrap: wrap;
 
 
                     </div>
-                    <!-- <div>
+                    <div>
                         <div>
                             <img src="./assets/images/other/3.png" alt="">
                         </div>
                         <input type="text" id="referral" placeholder="Referral Code (optional)">
                         <input type="hidden" name="url" id="url">
-                    </div> -->
+                    </div>
 
 
 
@@ -1729,13 +1729,13 @@ flex-wrap: wrap;
                     <input type="hidden"
                         name="state"
                         value="ipl-nonmanit">
-                    <!-- <div>
+                 <div>
                         <div>
                             <img src="./assets/images/other/3.png" alt="">
                         </div>
                         <input type="text" id="referral" placeholder="Referral Code (optional)">
                         <input type="hidden" name="url" id="url">
-                    </div> -->
+                    </div>
 
 
 
@@ -1766,7 +1766,7 @@ flex-wrap: wrap;
 
 
             </div>
-    </section>
+    </section> -->
     <section id="sponsor"
         class="efeoo"
         style="width: 100vw;/* min-height: 37.5625rem; */padding: 5.625rem 6.75rem;box-sizing: border-box;text-align: center;background: #EDEDED;display: flex;flex-direction: column;align-content: center;justify-content: center;">
