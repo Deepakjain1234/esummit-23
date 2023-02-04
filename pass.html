@@ -889,12 +889,12 @@
   </nav>
 
 
-  <img id="a" src="./assets/images/other/text.png" style="
+  <!-- <img  src="./assets/images/other/text.png" style="
   width: 100%;
   height: auto;
   margin-top:0px;
-  " alt="">
-  <div style="
+  " alt=""> -->
+  <div id="a" style="
   position: relative;
 ">
 
@@ -1163,7 +1163,7 @@ background-size: cover;width:100%;"></div>
     <script>
       setTimeout(() => {
         gsap.to("#overlay", { opacity: 1, duration: 2.5 });
-      }, 7000)
+      }, 2000)
       var previous = 0;
       var img = Array.from(document.getElementsByClassName("datebuttoncontainer")[0].getElementsByTagName('img'));
       img.forEach((x, i) => {
