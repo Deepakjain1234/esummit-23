@@ -19,7 +19,7 @@ let formMessage = firebase.database().ref('pass');
 
 //Submit form(1.2)
 function formSubmit(e) {
-   
+   e.preventDefault();
     
     // Get Values from the DOM
     let data =
