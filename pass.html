@@ -594,6 +594,32 @@
 
 
         @media (max-width: 400px) {
+            #overlayImgL{
+                
+    height: 40vh !important;
+            }
+            #btnreg{
+                
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 1.225em !important;
+    gap: 0.375em;
+    border: 0.125em solid #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    /* identical to box height */
+    font-size: 10px !important;
+    text-align: center;
+    height: 4rem;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #000000bd;
+    cursor: pointer;
+    /* margin-bottom: 218px; */
+    
+            }
 
             html {
                 font-size: 7px !important;
@@ -882,6 +908,43 @@
 
 
     </script>
+    <div style="
+    position: fixed;
+    z-index: 200000;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: #000000b5;
+">
+<style>
+    #overlayImg::before {
+        width:100px;
+        height:100px;
+        background:Red;
+        content:" ";
+    }
+</style>
+
+<div id="overlayImg" style="
+background-image: url(https://i.ibb.co/GQ55H5V/dj-carnival.png);
+width: 100vw;
+height: 100vh;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+display:block;
+">
+<a href="#register" onclick="this.parentElement.parentElement.style.display = 'none';" style="height: 100vh;width: 100vw;display: flex;align-content: center;justify-content: center;align-items: flex-end;">
+    <button id="btnreg" style="display: flex;flex-direction: row;align-items: center;padding: 2rem 2.225em;gap: 0.375em;border: 0.125em solid #FFFFFF;font-family: 'Poppins';font-style: normal;font-weight: 400;
+    /* identical to box height */font-size: 20px;text-align: center;height: 4rem;letter-spacing: 0.03em;color: #FFFFFF;background: #000000bd;cursor: pointer;margin-bottom: 218px;" fdprocessedid="vr5hle">
+        Click here to Register
+    </button></a>
+</div>
+    </div>
     <nav style="opacity: 1; ">
         <a href="https://www.ecellnitb.com"
             style="
@@ -1211,7 +1274,13 @@ background-size: cover;width:100%;"></div>
     <script>
 
     </script>
-    <section class="schedule">
+    <section class="schedule" style="
+    padding-top: 2rem;
+">
+        <div id="overlayImgL" style="background-image: url(https://i.ibb.co/GQ55H5V/dj-carnival.png);width: 100vw;height: 100vh;background-size: contain;background-repeat: no-repeat;background-position: center;display:block;background-color: #f6f6f6;">
+            <a href="#register" style="height: 100vh;width: 100vw;display: flex;align-content: center;justify-content: center;align-items: flex-end;">
+              </a>
+            </div>
         <div class="dheading">
             <span class="color dheadtext">Schedule</span>
         </div>
@@ -1812,7 +1881,7 @@ background-size: cover;width:100%;"></div>
 "
                             name="refferal">
                         <div id="applyCode"
-                            onclick="apply()"
+
                             style="display: flex !important;font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 1.0027rem;line-height: 1.1875rem;text-align: center;letter-spacing: 0.03rem;color: #FFFFFF;border-top-right-radius: 0.4375rem;border-bottom-right-radius: 0.5rem;border: none;cursor:pointer;/* width: 132.8096px; */height: 100%;background: #1d8ae8;/* margin-bottom: 4.0625rem; */padding: 0rem 4.5rem;display: block;/* margin-right: 0.25rem; */flex-direction: column;justify-content: center;align-items: center;">
                             Apply
                         </div>
@@ -1857,7 +1926,7 @@ color: #545454;
           document.getElementById('sch').removeAttribute('required')"
                         type="submit"
                         style="font-family: 'Inter';font-style: normal;font-weight: 600;font-size: 1.0027rem;line-height: 1.1875rem;text-align: center;letter-spacing: 0.03rem;color: #FFFFFF;border-radius: 0.2321rem;border: none;cursor:pointer;/* width: 8.3006rem; */height: 3.1444rem;background: #0C76FF;margin-bottom: 65px;padding: 0px 40px;display: none;">
-                        Proceed To Pay ₹700
+                        Proceed To Pay ₹100
                     </button>
                 </div>
             </form>
@@ -1903,7 +1972,8 @@ color: #545454;
                         <div class="info-our-body">
                             <i class="fas fa-phone-volume"
                                 aria-hidden="true">&nbsp;</i>
-                            <a href="tel:+917987312120" style="color:#B5B5B6;">7987312120</a>
+                            <a href="tel:+918989473997"
+                                style="color:white;">+91 7757877965</a>
                         </div>
                         <div class="info-our-body">
                             <i class="far fa-envelope"
